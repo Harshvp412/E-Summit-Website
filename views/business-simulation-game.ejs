@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SGPNVK9S2D');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />    <meta name="author" content="INSPIRO" />    
+	<meta name="description" content="A Youth conclve event">
+    <link rel="icon" href="/images/logos/favicon.png" sizes="16x16" />  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Business Simulation Game</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/youth-theme.css" rel="stylesheet">
+    <!-- LOAD JQUERY LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    
+    <!-- LOADING FONTS AND ICONS -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/fonts/font-awesome/css/font-awesome.css"> <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/navigation.css">
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="/plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            try {
+                var i = jQuery(window).width(),
+                    t = 9999,
+                    r = 0,
+                    n = 0,
+                    l = 0,
+                    f = 0,
+                    s = 0,
+                    h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) {
+                        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                    }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c) jQuery.each(c, function (e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+                <!-- Topbar -->
+                <div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #2A2A2A;">
+                    <div class="container">
+                        <div class="row">
+                            <% if(isLoggedIn) { %>
+                                <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                    <a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+                                        Go To Portal
+                                    </a>
+                                </div>
+                                <% } else { %>
+                                    <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                        <button class="btn btn-sm shadow" style="background-color: #7341B4;border-color: #7341B4;" data-target="#login-modal"
+                                            data-toggle="modal">Login to E-Summit</button>
+                                    </div>
+                                    <% } %>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: Topbar -->
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true" class="header-mini dark" >
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <!-- <img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+                            <img class="logo-fixed" src="/images/logos/esummit_clean.png"> -->
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="col-md-6 container">
+                            <nav>
+                                <ul>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#About">About</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Mission">Mission</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Dates">Dates</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Platform">Platform</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Sponsors">Sponsors</a></li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #7341B4 !important;">
+                                            Other Events
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu-title m-l-5 text-light">Youth's Conclave</li>
+                                            
+                                            <li><a href="/event/markathon">Markathon</a></li>
+                                            <li><a href="/event/elympics">Elympics</a></li>
+                                            <li><a href="/event/e-awards">E-Awards</a></li>
+                                            <li><a href="/event/boardroom">Boardroom</a></li>
+                                            <li><a href="/event/stocks-are-high">Stocks are high</a></li>
+                                            <li><a href="/event/business-simulation-game">Business Simulation
+                                                    Game</a></li>
+                                            <li><a href="/event/e-awards">E-Awards</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #7341B4 !important;">
+                                            Other Conclaves
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="/innovators-conclave">Innovator's Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/bootcamp">BootCamp</a></li>
+                                                        <li><a href="/event/unconference">Unconference</a></li>
+                                                    <li><a href="/event/product-construct">Product Construct</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="/startup-conclave">Startup Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/elevate">Elevate</a></li>
+                                                    <li><a href="/event/startup-showcase">Startup Showcase</a></li>
+                                                </ul>
+                                            </li>
+                                            
+                                        <li>
+                                            <a href="https://esummitiitm.org/growth-conclave">Growth
+                                                Conclave</a>
+                                        </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- Revolution Slider -->
+        <section id="slider">
+            <div id="rev_slider_347_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallaxjoy" data-source="gallery" style="background:linear-gradient(45deg, #151515 0%, #181818 100%);padding:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.3.3 fullscreen mode -->
+                <div id="rev_slider_347_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.3">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-967" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="/plugins/slider-revolution/assets/images/transparent.png" data-bgcolor='linear-gradient(45deg, #7341B4 0%, #7341b4 100%)' style='background:linear-gradient(45deg, rgba(82,82,212,1) 0%, rgba(136,136,212,1) 100%)' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption   tp-resizeme" id="slide-967-layer-25" data-x="['left','left','left','left']" data-hoffset="['21','21','21','-9']" data-y="['top','top','top','top']" data-voffset="['45','45','45','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:15;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="/plugins/slider-revolution/assets/images/OBJ_triangle_s.png" alt="" data-ww="['55px','55px','55px','56px']" data-hh="48px" width="111" height="96" data-no-retina> </div>
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-967-layer-7" data-x="['left','left','left','left']" data-hoffset="['-146','-146','-50','-86']" data-y="['top','top','top','top']" data-voffset="['38','38','131','54']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:240deg;opacity:0;fb:20px;","to":"o:1;rZ:-25;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;"><img src="/plugins/slider-revolution/assets/images/OBJ_pen.png" alt="" data-ww="['530px','530px','300px','265px']" data-hh="['60px','60px','34px','30px']" width="530" height="60" data-no-retina> </div>
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-joyshadow rs-parallaxlevel-15" id="slide-967-layer-15" data-x="['center','center','center','center']" data-hoffset="['260','260','260','260']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="2500" data-height="['500','500','400','300']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":100,"speed":750,"frame":"0","from":"sX:3;sY:3;opacity:0;","to":"o:1;rZ:45;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;background:linear-gradient(140deg, #252525 0%, #333333 100%);"> </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-10" id="slide-967-layer-20" data-x="['left','left','left','left']" data-hoffset="['1079','1079','587','315']" data-y="['top','top','top','top']" data-voffset="['512','512','692','471']" data-width="['100','100','100','50']" data-height="['100','100','100','50']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:35;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;border-color:#ffffff;border-style:solid;border-width:3px 3px 3px 3px;">
+                                <div class="rs-looped rs-wave" data-speed="8" data-angle="0" data-radius="3px" data-origin="50% 50%"> </div>
+                            </div>
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-967-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','-3']" data-width="2500" data-height="['500','500','400','300']" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":200,"speed":750,"frame":"0","from":"sX:3;sY:3;opacity:0;","to":"o:1;rZ:-15;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;background-color:#151515;"> </div>
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-967-layer-11" data-x="['left','left','left','left']" data-hoffset="['76','76','58','-23']" data-y="['top','top','top','top']" data-voffset="['593','593','677','503']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:-180deg;opacity:0;fb:20px;","to":"o:1;rZ:25;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10;"><img src="/images/BSG/pic3.svg" alt="" data-ww="['300px','300px','150px','150px']" data-hh="['400px','400px','200','200px']" width="300" height="400" data-no-retina> </div>
+                            <!-- LAYER NR. 7 -->
+                            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-967-layer-13" data-x="['left','left','left','left']" data-hoffset="['884','884','579','355']" data-y="['top','top','top','top']" data-voffset="['232','232','288','204']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:-180deg;opacity:0;fb:20px;","to":"o:1;rZ:15;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11;"><img src="/images/BSG/pic2.svg" alt="" data-ww="['230px','230px','20%','165px']" data-hh="['130px','130px','130px','93px']" width="230" height="130" data-no-retina> </div> -->
+                            <!-- LAYER NR. 8 -->
+                            <!-- <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-2" id="slide-967-layer-6" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="['700','700','560','400']" data-height="['600','600','500','500']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;border-color:rgb(255,255,255);border-style:solid;border-width:20px 20px 20px 20px;"> </div> -->
+                            <!-- LAYER NR. 9 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-967-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-100','-80']" data-fontsize="['100','100','80','50']" data-lineheight="['100','100','80','50']" data-letterspacing="['2','2','30','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":550,"split":"chars","splitdelay":0.1000000000000000055511151231257827021181583404541015625,"speed":2500,"split_direction":"random","frame":"0","from":"y:50px;sX:1;sY:1;opacity:0;fb:20px;","color":"#001536","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 500; color: #ffffff;"><img src="/images/BSG/BSG_White.svg" width="100%" /> </div>
+                            <!-- LAYER NR. 10 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-967-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-fontsize="['100','100','80','50']" data-lineheight="['100','100','80','50']" data-letterspacing="['2','2','30','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":600,"split":"chars","splitdelay":0.1000000000000000055511151231257827021181583404541015625,"speed":2500,"split_direction":"random","frame":"0","from":"y:50px;sX:1;sY:1;opacity:0;fb:20px;","color":"#001536","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; white-space: nowrap; font-size: 50px !important; line-height: 150px !important; font-weight: 500; color: #ffffff;">BUSINESS </div>
+                            <!-- LAYER NR. 11 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-967-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['120','120','100','80']" data-fontsize="['100','100','80','50']" data-lineheight="['100','100','80','50']" data-letterspacing="['2','2','30','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"delay":650,"split":"chars","splitdelay":0.1000000000000000055511151231257827021181583404541015625,"speed":2500,"split_direction":"random","frame":"0","from":"y:50px;opacity:0;fb:20px;","color":"#001536","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; white-space: nowrap; font-size: 50px !important; line-height: 100px; font-weight: 100; color: #ffffff;">SIMULATION </div>
+                            <!-- LAYER NR. 12 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-10" id="slide-967-layer-27" data-x="['left','left','left','left']" data-hoffset="['1047','1047','715','715']" data-y="['top','top','top','top']" data-voffset="['728','728','574','574']" data-width="50" data-height="100" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:15;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 16;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;border-radius:25px 25px 25px 25px;">
+                                <div class="rs-looped rs-wave" data-speed="5" data-angle="0" data-radius="4px" data-origin="50% 50%"> </div>
+                            </div>
+                            <!-- LAYER NR. 13 -->
+                            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" id="slide-967-layer-12" data-x="['left','left','left','left']" data-hoffset="['687','687','452','271']" data-y="['top','top','top','top']" data-voffset="['356','356','499','328']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:-140deg;opacity:0;fb:20px;","to":"o:1;rZ:-15;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17;"><img src="/plugins/slider-revolution/assets/images/OBJ_headphones.png" alt="" data-ww="['710px','710px','400px','355px']" data-hh="['630px','630px','355px','315px']" width="710" height="630" data-no-retina> </div> -->
+                            <!-- LAYER NR. 14 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-967-layer-8" data-x="['left','left','left','left']" data-hoffset="['332','332','175','82']" data-y="['top','top','top','top']" data-voffset="['-3','-3','109','54']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:-180deg;opacity:0;fb:20px;","to":"o:1;rZ:-15;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;"><img src="/images/BSG/pic1.svg" alt="" data-ww="['500px','500px','350px','250px']" data-hh="['170px','170px','119px','85px']" width="500" height="170" data-no-retina> </div>
+                            <!-- LAYER NR. 15 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-10" id="slide-967-layer-21" data-x="['left','left','left','left']" data-hoffset="['1158','1158','658','416']" data-y="['top','top','top','top']" data-voffset="['19','19','334','60']" data-width="['100','100','50','50']" data-height="['100','100','50','50']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;border-radius:50px 50px 50px 50px;">
+                                <div class="rs-looped rs-wave" data-speed="3" data-angle="0" data-radius="4px" data-origin="50% 50%"> </div>
+                            </div>
+                            <!-- LAYER NR. 16 -->
+                            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-967-layer-9" data-x="['left','left','left','left']" data-hoffset="['899','899','490','306']" data-y="['top','top','top','top']" data-voffset="['-136','-136','31','24']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:-180deg;opacity:0;fb:20px;","to":"o:1;rZ:-15;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20;"><img src="/images/BSG/pic2.svg" alt="" data-ww="['320px','320px','200px','160px']" data-hh="['450px','450px','281px','225px']" width="320" height="450" data-no-retina> </div> -->
+                            <!-- LAYER NR. 17 -->
+                            <!-- <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-10" id="slide-967-layer-22" data-x="['left','left','left','left']" data-hoffset="['-203','-203','-4','42']" data-y="['top','top','top','top']" data-voffset="['349','349','328','360']" data-width="['100','100','100','50']" data-height="['100','100','100','50']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 21;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;border-radius:50px 50px 50px 50px;">
+                                <i class="fa fa-chevron-down"></i>
+                            </div> -->
+                            <!-- LAYER NR. 18 -->
+                            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-967-layer-10" data-x="['left','left','left','left']" data-hoffset="['-294','-294','-82','-106']" data-y="['top','top','top','top']" data-voffset="['179','179','285','158']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":200,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:180deg;sX:1;sY:1;opacity:0;fb:20px;","to":"o:1;rZ:15;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22;"><img src="/plugins/slider-revolution/assets/images/OBJ_phone.png" alt="" data-ww="['390px','390px','250px','195px']" data-hh="['620px','620px','397px','310px']" width="390" height="620" data-no-retina> </div> -->
+                            <!-- LAYER NR. 19 -->
+                            <div class="tp-caption rev-btn  tp-resizeme  tp-joyshadow" id="slide-967-layer-14" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['20','20','130','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1500,"speed":1500,"sfxcolor":"#ffffff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:linear-gradient(90deg, #111111 0%, #111111 100%);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,50]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,50]" style="z-index: 23; white-space: nowrap; font-size: 20px; line-height: 80px; font-weight: 600; color: #ffffff; letter-spacing: 5px;border-color:rgba(0,0,0,1);outline:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;background-color: #111111;">
+                                
+                                <% if (isLoggedIn && isRegistered) { %>
+                                    <a type="button" data-tilt data-tilt-glare="true" class="btn text-uppercase btn-lg"
+                                        href="#" style="background-color: transparent !important;">
+                                        Go to Portal
+                                    </a>
+                                    <% } else { %>
+                                        <button class="btn btn-lg shadow disabled" style="cursor: not-allowed !important;">
+                                            Registrations closed
+                                        </button>
+                                        <% } %>
+                                            <!-- <div class="countdown medium" data-countdown="2021/01/05 23:59:59"></div>                             -->
+                                    </div>
+                            <!-- LAYER NR. 20 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-967-layer-16" data-x="['left','left','center','left']" data-hoffset="['100','100','0','-226']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','30','64']" data-width="200" data-height="5" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:[-100%];y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 24;background-color:rgb(255,255,255);"> </div>
+                            <!-- LAYER NR. 21 -->
+                            <div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-967-layer-17" data-x="['left','left','center','left']" data-hoffset="['175','175','0','-153']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['86','86','50','91']" data-width="50" data-height="50" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="svg" data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":"","speed":"1500","ease":"Power4.easeOut"}]' data-svg_src="/plugins/slider-revolution/assets/images/ic_arrow_downward_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":2500,"speed":1000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 25; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: #ffffff;cursor:pointer;">
+                                <div class="rs-looped rs-slideloop" data-easing="Power1.easeIn" data-speed="1" data-xs="0" data-xe="0" data-ys="-10" data-ye="10"> </div>
+                            </div>
+                            <!-- LAYER NR. 22 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-12" id="slide-967-layer-19" data-x="['left','left','left','left']" data-hoffset="['94','94','123','39']" data-y="['top','top','top','top']" data-voffset="['77','77','138','65']" data-width="['60','60','60','30']" data-height="['60','60','60','30']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 26;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;border-radius:50px 50px 50px 50px;">
+                                <div class="rs-looped rs-wave" data-speed="6" data-angle="0" data-radius="5px" data-origin="50% 50%"> </div>
+                            </div>
+                            <!-- LAYER NR. 23 -->
+                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-12" id="slide-967-layer-23" data-x="['left','left','left','left']" data-hoffset="['1081','1081','657','394']" data-y="['top','top','top','top']" data-voffset="['109','109','128','298']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:25;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 27;">
+                                <!-- <div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><img src="/images/BSG/pic4.svg" alt="" data-ww="['110px','110px','110px','110px']" data-hh="['95px','95px','95px','95px']" width="221" height="191" data-no-retina> </div> -->
+                            </div>
+                            <!-- LAYER NR. 24 -->
+                            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-12" id="slide-967-layer-24" data-x="['left','left','left','left']" data-hoffset="['-31','-31','31','-34']" data-y="['top','top','top','top']" data-voffset="['548','548','589','494']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:-40;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 28;">
+                                <div class="rs-looped rs-wave" data-speed="6" data-angle="0" data-radius="6px" data-origin="50% 50%"><img src="/images/BSG/pic2.svg" alt="" data-ww="['110px','110px','110px','110px']" data-hh="['95px','95px','95px','95px']" width="221" height="191" data-no-retina> </div>
+                            </div> -->
+                            <!-- LAYER NR. 25 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-12" id="slide-967-layer-26" data-x="['left','left','left','left']" data-hoffset="['42','42','24','57']" data-y="['top','top','top','top']" data-voffset="['257','257','209','226']" data-width="['40','40','40','20']" data-height="['40','40','40','20']" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:45;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 29;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;">
+                                <div class="rs-looped rs-wave" data-speed="5" data-angle="0" data-radius="5px" data-origin="50% 50%"> </div>
+                            </div>
+                            <!-- LAYER NR. 26 -->
+                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-11" id="slide-967-layer-28" data-x="['left','left','left','left']" data-hoffset="['1173','1173','764','764']" data-y="['top','top','top','top']" data-voffset="['652','652','723','723']" data-width="30" data-height="30" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:-15;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 30;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;">
+                                <div class="rs-looped rs-wave" data-speed="8" data-angle="0" data-radius="8px" data-origin="50% 50%"> </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div><!-- END REVOLUTION SLIDER -->
+            <script type="text/javascript">
+                var revapi347,
+                    tpj = jQuery;
+                tpj(document).ready(function () {
+                    if (tpj("#rev_slider_347_1").revolution == undefined) {
+                        revslider_showDoubleJqueryError("#rev_slider_347_1");
+                    } else {
+                        revapi347 = tpj("#rev_slider_347_1").show().revolution({
+                            sliderType: "hero",
+                            jsFileLocation: "/plugins/slider-revolution/js/",
+                            sliderLayout: "fullscreen",
+                            dottedOverlay: "none",
+                            delay: 9000,
+                            responsiveLevels: [1240, 1240, 778, 480],
+                            visibilityLevels: [1240, 1240, 778, 480],
+                            gridwidth: [1240, 1240, 778, 480],
+                            gridheight: [868, 868, 960, 720],
+                            lazyType: "none",
+                            parallax: {
+                                type: "scroll",
+                                origo: "slidercenter",
+                                speed: 1000,
+                                speedbg: 0,
+                                speedls: 2000,
+                                levels: [8, 16, 24, 32, -8, -16, -24, -32, 36, 2, 4, 6, 50, -30, -20, 55],
+                            },
+                            shadow: 0,
+                            spinner: "spinner1",
+                            autoHeight: "off",
+                            fullScreenAutoWidth: "off",
+                            fullScreenAlignForce: "off",
+                            fullScreenOffsetContainer: "",
+                            fullScreenOffset: "",
+                            disableProgressBar: "on",
+                            hideThumbsOnMobile: "off",
+                            hideSliderAtLimit: 0,
+                            hideCaptionAtLimit: 0,
+                            hideAllCaptionAtLilmit: 0,
+                            debugMode: false,
+                            fallbacks: {
+                                simplifyAll: "off",
+                                disableFocusListener: false,
+                            }
+                        });
+                    }
+                    try {
+                        initSocialSharing("347")
+                    } catch (e) {}
+                }); /*ready*/
+            </script>
+        </section>
+        <!-- end: Revolution Slider-->
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Registration</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="register-form-modal-body">
+                        <form id="register-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name <span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your Name"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="telephone">Contact No. <span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">+91</span>
+                                        </div>
+                                        <input class="form-control" type="phone" name="phone"
+                                            placeholder="Enter your Telephone number" aria-describedby="prefix"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="instituteName">Institute name <span class="text-danger">*</span></label>
+                                    <input type="text" name="instituteName" class="form-control"
+                                        placeholder="Enter your Institute name" required>
+                                </div>
+                                <div class="col-md-4 form-group justify-content-end">
+                                    <label for="startupOwner">Do you have a startup? <span
+                                            class="text-danger">*</span></label>
+                                    <input id="yes" name="startupOwner" value="yes" type="radio">
+                                    <label style="display: inline;" for="yes">Yes</label>
+                                    <br>
+                                    <input id="no" name="startupOwner" value="no" type="radio">
+                                    <label style="display: inline;" for="no">No</label>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="register-button" type="submit" class="btn btn-block">Register</button>
+                                    <span>
+                                        Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+                                            data-toggle="modal">Log In</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="verification-form" class="hidden">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <span>A mail has been sent.</span>
+                                    <br>
+                                    <label for="code">Verification Code<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="code"
+                                        placeholder="Enter the verification code." required>
+                                </div>
+                                <span class="text-danger hidden">
+                                    The Verification Code is incorrect. Please input a correct code.
+                                </span>
+                            </div>
+                            <button id="verify-button" type="submit text-right" class="btn">Verify</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Register Modal -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Login</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="login-form-modal-body">
+                        <form id="login-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">ES21</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="summitID"
+                                            placeholder="Enter your Summit ID" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 m-b-0">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="login-password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-danger" id="password-incorrect" style="display: none;">
+                                        The password is incorrect. Please input the correct password.
+                                    </span>
+                                    <a href="/portal/forgot-password" target="_blank" rel="noopener noreferrer">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="login-button" type="submit" class="btn btn-block">Login</button>
+         
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Login Modal -->
+        <!-- Info Modal -->
+        <div class="modal fade" id="info-modal" tabindex="-1" role="modal" aria-labelledby="info-modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Register</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body text-center" id="login-form-modal-body">
+                        <h4>You need to be registered/logged in to E-Summit to register in an event.</h4>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#register-modal" style="color: #181818;">Register</a>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#login-modal" style="color: #181818;">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Info Modal -->
+        <section class="background-dark" id="About">
+            <div class=" reverse-shape-divider shape-divider" data-color="#7341B4" data-height="60" data-position="top" data-flip-horizontal="true" data-flip-vertical="true" data-style="7" style="z-index: 25;"></div>
+            
+           
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-10 animated fadeInRight visible" data-animate="fadeInRight">
+                        <div class="heading-text heading-section text-left text-light mt-5">
+                            <h2 style="font-family: 'Titillium Web';">About</h2>
+                            <p>CeoForChange is a competition to replicate a startup environment and understand the dynamics involved in the current market scenario. 
+                                </p><p>We bring to you an opportunity to run your own company via a real-time simulation game from Cymorg and earn big. </p>
+                            <!-- <a class="btn" href="#"><i class="fa fa-tint"></i> Learn more</a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-2"> <img alt="" src="/images/other/polo-iphone6-v2.pn"> </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="background-light" style="padding-top: 10%;" id="Mission">
+            <div class="container">
+                 <!--Icon pie chart-->
+                 <div class="shape-divider" data-color="#181818" data-height="60" data-flip-vertical="true" data-position="top"  data-style="3" style="z-index: 25;"></div>
+                 <div class="shape-divider" data-color="#181818" data-height="60" data-flip-horizontal="true"  data-style="3" style="z-index: 25;"></div>
+
+                 <div class="heading-text heading-section text-center">
+                    <h2 style="font-family: 'Titillium Web';">Mission</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 text-center"> <span class="pie-chart" data-percent="100" data-size="80" data-width="3"> <i class="far fa-lightbulb text-small" style="width: 80px; height: 80px; line-height: 80px;"></i> <canvas height="100" width="100" style="height: 80px; width: 80px;"></canvas></span>
+                        <h4>Startup</h4>
+                        <p>Test out your entrepreneurial mettle in running a startup tuned to a dynamic market.</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="pie-chart" data-percent="100" data-size="80" data-width="3"> <i class="fa fa-bicycle text-small" style="width: 80px; height: 80px; line-height: 80px;"></i> <canvas height="100" width="100" style="height: 80px; width: 80px;"></canvas></div>
+                        <h4>Strategy</h4>
+                        <p>Take strategic, tactical and operational decisions to maximize the profits of your virtual firm.</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="pie-chart" data-percent="100" data-size="80" data-width="3"> <i class="fa fa-money-bill text-small" style="width: 80px; height: 80px; line-height: 80px;"></i> <canvas height="100" width="100" style="height: 80px; width: 80px;"></canvas></div>
+                        <h4>Participation</h4>
+                        <p>Know where you stand amongst various participants on a national leaderboard.</p>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="pie-chart" data-percent="100" data-size="80" data-width="3"> <i class="fa fa-camera text-small" style="width: 80px; height: 80px; line-height: 80px;"></i> <canvas height="100" width="100" style="height: 80px; width: 80px;"></canvas></div>
+                        <h4>Analytics</h4>
+                        <p>Receive an analytical report of your progress, strengths and weaknesses.</p>
+                    </div>
+                </div>
+                <!--END: Icon pie chart-->
+            </div>
+        </section>
+        <section id="Register" class="image-block" style="background-color:#181818;">
+            <div class="container-fluid">
+                <div class="shape-divider" data-flip-horizontal="true" data-color="#6f31bd" data-height="50" data-style="7" style="z-index: 0; opacity: 1;"></div>
+
+                    <div class="text-light">
+
+                        <div class="heading-text heading-section text-center">
+                            <h2 style="font-family: 'Titillium Web';">How to Participate!</h2>
+                        </div>
+
+                        <p class="text-center text-dark" style="font-size: 20px;">Detailed instructions & rulebook will be sent out soon after the registration period ends.
+                        </p>
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+        <!-- Page Content -->
+        <section id="Dates" class="background-dark text-light" style="padding: 100px 0;">
+            <div class="container">
+            <div class="shape-divider" data-color="#7341B4" data-position="top" data-flip-vertical="true" data-style="7" data-height="50" style="z-index: 10; opacity: 1;"> </div>
+
+                <div class="heading-text heading-section text-center">
+                    <h2 style="font-family: 'Titillium Web';">Dates to remember!</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <p class="text-center text-dark" style="font-size: 20px;">Event scheduled on 13th of March. Timing will be notified soon.
+                    </p>
+
+                </div>
+            </div>
+            <!-- <div class="shape-divider" data-flip-vertical="true"  data-color="#7341B4" data-style="13" style="z-index: 10;" data-height="50"></div> -->
+            
+        </section>
+        <section id="Rewards" class="background-grey" style="padding-bottom: 10px;margin-bottom:0;padding-top: 100px;">
+            <div class="shape-divider" data-position="top" data-flip-vertical="true" data-color="#181818" data-style="13" data-height="100" style="z-index: 10;"></div>
+            <!-- <div class="shape-divider" data-flip-vertical="true" data-color="#181818" data-style="4" data-height="100" style="z-index: 15;margin-top: 0;"></div> -->
+        
+            <div class="container">
+        
+                <div class="heading-text heading-section text-center">
+                    <h2 style="font-family: 'Titillium Web';">Rewards</h2>
+                </div>
+                <div class="row center">
+                    <div class="col-lg-6 align-center">
+                        <div class="icon-box effect medium border center">
+                            <div class="icon">
+                                <a href="#"><i class="fas fa-chart-line"></i></a>
+                            </div>
+                            <h2>Winner</h2>
+                            <p><strong>INR 9,000!</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-center" >
+                        <div class="icon-box effect medium border center">
+                            <div class="icon">
+                                <a href="#"><i class="fa fa-user"></i></a>
+                            </div>
+                            <h2>First Runner</h2>
+                            <p><strong>INR 6,500!</strong> </p>
+                        </div>
+                    </div>
+        
+                        <div class="icon-box effect medium border center">
+                            <div class="icon">
+                                <a href="#"><i class="fa fa-trophy"></i></a>
+                            </div>
+                            <h2>Second Runner</h3>
+                            <p><strong>INR 4,000!</strong> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Page Content -->
+        <section id="Platform" class="image-block no-padding-bottom" style="background-color:#111111;margin-top: 0;">
+            <div class="container-fluid">
+                <div class="shape-divider" data-position="top" data-flip-vertical="true" data-flip-horizontal="true" data-color="#ffffff"  data-height="50" data-style="13" style="z-index: 0; opacity: 1;"></div>
+
+                <div class="row" style="max-height: 500px;">
+                    
+                    <div class="col-lg-6" style="height:250px;background:url(/images/BSG/pic1.svg) 50% 50% / cover no-repeat; background-position: center center;">
+                    </div>
+                    <div class="col-lg-6 text-light">
+
+                        <div class="heading-text heading-section text-left">
+                            <h2 style="font-family: 'Titillium Web';">Platform</h2>
+                        </div>
+                        <p>
+                            To be held on custom platform by Cymorg. Link will be shared with registered participants.
+                            <br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="shape-divider" data-color="#7341B4" data-style="11" data-height="50" style="z-index: 0; opacity: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 120" preserveAspectRatio="none" style="height:50px" class="start"><path d="M510.7,2.9c-98.9,21.9-222.3,85.5-322,85.5C80.1,88.4,24.1,56.1,0,36.4V120H630V15.2C602.4,6.9,550.1-5.8,510.7,2.9Z" style="fill: rgb(115, 65, 180);"></path></svg></div> -->
+
+        </section>
+
+        
+    <section id="Sponsors" class="image-block no-padding" style="background-color:#111111;">
+        <div class="container-fluid">
+            <!-- <div class="shape-divider" data-position="top" data-flip-vertical="true" data-color="#7341b4" data-height="60"  data-style="4" style="z-index: 50 !important;opacity: 1;"></div> -->
+
+            <div class="row">
+                <div class="col-lg-6 text-light">
+                    <h1 style="margin-top: 50px;font-family: 'Titillium Web';">About Sponsor</h1>
+                    <p>Cymorg is a SaaS platform on which dynamic business simulations are used for analyzing and developing decision-making behavior in specific contexts. We improve business outcomes for our client organizations by aligning frontline team behavior with corporate strategy, at scale. To do this, we bring together chatbot technologies, machine learning algorithms, sentiment analytics and organizational psychology. The founders of Cymorg are proud alums from IIT Madras (Saras and Ganga hostel respectively) who spent many years making good and bad decisions in large multinationals across three continents, before becoming entrepreneurs.
+                    </p>
+                    <p><a style="color: #7341B4 !important;" href="https://cymorg.com">Check the Website here</a></p>
+                    <div class="social-icons social-icons-colored social-icons-rounded text-left">
+                        <ul>
+
+                            <li class="social-instagram">
+                                <a href="https://www.instagram.com/cymorgsolutions/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-linkedin">
+                                <a href="https://www.linkedin.com/company/cymorg-inc">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="social-twitter">
+                                <a href="https://twitter.com/CymorgSolutions">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="height:609px;background-image:url(/images/BSG/SponsLogo.png); background-size: contain;background-repeat: no-repeat;background-position: center center;"> </div>
+            </div>
+        </div>
+        <!-- <div class="shape-divider" data-color="#7341B4" data-style="11" data-height="50" style="z-index: 50 !important;opacity: 1;"></div> -->
+    </section>  
+    <section class="dark no-padding-bottom" style="background-color: #111111;"></section>
+        <!-- Footer -->
+
+		<footer id="footer" class="light">
+			<div id="particles-bubble" class="particles" style="opacity: 0.3"></div>
+			<div class="footer-content p-b-20">
+				<div class="container">
+					<div class="row gap-y">
+						<div class="col-lg-2 p-l-30 d-none d-xl-block d-lg-block"></div>
+						<div class="col-12 col-lg-2 col-md-6"
+							style="text-align: center; width: 100%; padding-bottom: 20px">
+							<a href="#"><img src="/images/logos/e-cell_logo_wt_captions.png" alt="logo"
+									style="width: 200px" /></a>
+						</div>
+						<div class="col-lg-1 d-none d-xl-block d-lg-block"></div>
+						<div class="footer-m-fix col-12 col-md-6 col-lg-3 text-center" style="margin-top: 47px">
+							<!-- Footer widget area 1 -->
+							<h4>Contact us</h4>
+							<div class="widget m-b-0 m-l-0">
+								<ul class="list" style="color: #000000; font-size: 1.4rem; word-wrap: none">
+                                    <li>
+                                        <a style="color: #000000" href="#">
+                                            Vivek Sharma
+                                        </a>
+                                    </li>
+									<li>
+										+91 9136832490
+										<i class="fa fa-phone" style="
+													-webkit-transform: scaleX(-1);
+													transform: scaleX(-1);
+												"></i>
+									</li>
+								</ul>
+							</div>
+							<!-- end: Footer widget area 1 -->
+						</div>
+
+						<div class="footer-m-fix col-12 col-md-6 col-lg-3 text-center m-t-70">
+							<!-- Social icons -->
+							<h4>We are social</h4>
+							<div class="social-icons social-icons-colored social-icons-rounded text-center">
+								<ul>
+									<li class="social-facebook">
+										<a href="https://www.facebook.com/ECELLIITM/">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li class="social-instagram">
+										<a href="https://www.instagram.com/ecell_iitm/?hl=en">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="social-linkedin">
+										<a href="https://www.linkedin.com/company/e-cell-iitm/?originalSubdomain=in">
+											<i class="fab fa-linkedin"></i>
+										</a>
+									</li>
+									<li class="social-youtube">
+										<a href="https://www.youtube.com/channel/UCtPazFT8VSfAeREcgag4zMw">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li class="social-twitter">
+										<a href="https://twitter.com/ecelliitm">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright-content p-t-20 p-b-20">
+				<div class="container">
+					<div class="row h5">
+						<div class="col-lg-6">
+							<div class="d-none d-xl-block d-lg-block">
+								&copy;Developed by
+								<strong>Web Operations | E-Cell | IIT Madras.</strong>
+								<br />
+								All Rights Reserved.
+							</div>
+							<div class="d-block d-lg-none text-center">
+								&copy;Developed by
+								<br />
+								<strong>Web Operations | E-Cell | IIT Madras.</strong>
+								<br />
+								All Rights Reserved.
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="d-none d-xl-block d-lg-block">
+								<span>For issues related to the website, contact:</span>
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										Shobhan <i class="fab fa-whatsapp"></i> : +91 6385188219
+									</div>
+								</div>
+							</div>
+							<div class="d-block d-lg-none text-center">
+								<br />
+								<span>For issues related to the website, contact:</span>
+								<div>
+									Shobhan <i class="fab fa-whatsapp"></i> : +91 6385188219
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <a id="scrollTop"> <i class="fa fa-angle-up"></i><i class="fa fa-angle-double-up"></i> </a>
+
+	<!-- !Don't change script order -->
+
+	<!-- jQuery is needed by POLO so we load it from CDN instead of serving it on our own -->
+	<!-- <script src="/js/jquery.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+	<script src="/js/plugins.js"></script>
+	<script src="/js/functions.js"></script>
+
+	<!-- Latest particles lib loaded from CDN-->
+	<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"
+		integrity="sha256-Xt56vRiLO7CCjPyRuztU0NPrYwx4IFIUaHpdxWbFOKY=" crossorigin="anonymous"></script>
+	<script src="/plugins/particles/particles-stars.js" type="text/javascript"></script>
+	<script src="/plugins/particles/particles-bubble.js" type="text/javascript"></script>
+
+	<!-- Validation Library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+	<!-- My -->
+	<script src="/js/homepage/register-login.js"></script>
+	<!-- <script src="/js/intersection-animate.js"></script> -->
+</body>
+
+</html>

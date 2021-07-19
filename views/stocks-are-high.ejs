@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SGPNVK9S2D');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="INSPIRO" />
+    <meta name="description" content="Themeforest Template Polo, html template">
+    <link rel="icon" href="/images/logos/favicon.png" sizes="16x16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Stocks are High</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
+    <link href="/css/youth-theme.css" rel="stylesheet">
+
+</head>
+
+<style>
+    #regButton:hover {
+        background-color: #7341B4 !important;
+    }
+</style>
+
+
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Header -->
+        <!-- Topbar -->
+        <div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #181818;">
+            <div class="container">
+                <div class="row">
+                    <% if(isLoggedIn) { %>
+                        <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                            <a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+                                Go To Portal
+                            </a>
+                        </div>
+                        <% } else { %>
+                            <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                <button class="btn btn-sm shadow" data-target="#login-modal" data-toggle="modal"
+                                    style="background-color: #7341B4; border-color: #7341B4;">Login</button>
+                            </div>
+                            <% } %>
+                </div>
+            </div>
+        </div>
+        <!-- end: Topbar -->
+        <header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true"
+            class="header-mini dark" style="background: #181818;">
+            <div class="header-inner dark">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <!-- <img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+                            <img class="logo-fixed" src="/images/logos/esummit_clean.png"> -->
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="col-md-6 container">
+                            <nav>
+                                <ul>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#About"
+                                            class="scroll-to">ABOUT</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Rounds">ROUNDS</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Mission">MISSION</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Dates">DATES</a></li>
+                                    <li><a style="color: #ffffff;" class="nav-a" href="#Platform">PLATFORM</a></li>
+                                    <li><a href="/sponsors" class="scroll-to">SPONSORS</a></li>
+                                    <!-- <li><a style="color: #ffffff;" class="nav-a" href="#Sponsors">Sponsors</a></li> -->
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #7341B4 !important;">
+                                            Other Events
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu-title m-l-5 text-light">Youth's Conclave</li>
+
+                                            <li><a href="/event/markathon">Markathon</a></li>
+                                            <li><a href="/event/elympics">Elympics</a></li>
+                                            <li><a href="/event/e-awards">E-Awards</a></li>
+                                            <li><a href="/event/boardroom">Boardroom</a></li>
+                                            <li><a href="/event/stocks-are-high">Stocks are high</a></li>
+                                            <li><a href="/event/business-simulation-game">Business Simulation
+                                                    Game</a></li>
+                                            <li><a href="/event/e-awards">E-Awards</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #7341B4 !important;">
+                                            Other Conclaves
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="/innovators-conclave">Innovator's
+                                                    Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/bootcamp">BootCamp</a></li>
+                                                    <li><a href="/event/unconference">Unconference</a></li>
+                                                    <li><a href="/event/product-construct">Product Construct</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="/startup-conclave">Startup
+                                                    Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/elevate">Elevate</a></li>
+                                                    <li><a href="/event/startup-showcase">Startup Showcase</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="https://esummitiitm.org/growth-conclave">Growth
+                                                    Conclave</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- SECTION DARK -->
+        <section class="background-dark" style="padding-top: 50px; padding-bottom: 60px;">
+            <div class="container" style="max-width: 95%;">
+                <div class="shape-divider" data-color="#7341B4" data-style="11" data-height="60"></div>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div style="width: 100%;flex-direction:column; justify-content: center; align-items: center;"
+                            id="left-stocks">
+
+                            <!-- <img style="margin: 0 auto !important;" src="/images/StocksAreHigh/SponsLogo.svg" width="100px" alt="spons_logo" /> -->
+                            <!-- <p style="margin-bottom: 5px;color: #7341B4;">Presents</p> -->
+                        </div>
+                        <img alt="" class="bg-pic" src="/images/StocksAreHigh/Stockslogo2_animated.svg" width="100%"
+                            height="500px" style="object-fit: contain;padding-bottom: 50px;">
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="heading-text heading-section text-left text-light mt-5">
+                            <div id="right-stocks"
+                                style="width: 100%;justify-content: center;align-items: center;flex-direction: column;">
+                                <!-- <img src="/images/StocksAreHigh/SponsLogo.svg" width="100px" alt="spons_logo" />
+                        <p style="margin-bottom: 5px;color: #7341B4;">Presents</p> -->
+                            </div>
+                            <div id="stocks-spons-logo" class="col-lg-6"
+                                style="background-image:url(/images/StocksAreHigh/wellsfargologo.jpeg); background-size: contain;background-repeat: no-repeat;background-position: center center;">
+                            </div>
+                            <h1>Stocks are High</h1>
+                            <p>A virtual stock trading competition that is part of the E-Summit 2021 event organized by
+                                E-Cell, IIT Madras. </p>
+
+                            <% if (isLoggedIn && isRegistered) { %>
+                                <a type="button" data-tilt data-tilt-glare="true" class="btn text-uppercase btn-lg"
+                                    href="#"
+                                    style="background-color: #7341B4 !important; border-color: #7341B4 !important;">
+                                    Go to Portal
+                                </a>
+                                <% } else { %>
+                                    <button class="btn btn-lg shadow disabled" style="cursor: not-allowed !important;">
+                                        Registrations closed
+                                    </button>
+                                    <% } %>
+                                        <!-- <div class="countdown medium" data-countdown="2021/01/05 23:59:59"></div>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: SECTION DARK -->
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Registration</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="register-form-modal-body">
+                        <form id="register-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name <span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your Name"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="telephone">Contact No. <span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">+91</span>
+                                        </div>
+                                        <input class="form-control" type="phone" name="phone"
+                                            placeholder="Enter your Telephone number" aria-describedby="prefix"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="instituteName">Institute name <span class="text-danger">*</span></label>
+                                    <input type="text" name="instituteName" class="form-control"
+                                        placeholder="Enter your Institute name" required>
+                                </div>
+                                <div class="col-md-4 form-group justify-content-end">
+                                    <label for="startupOwner">Do you have a startup? <span
+                                            class="text-danger">*</span></label>
+                                    <input id="yes" name="startupOwner" value="yes" type="radio">
+                                    <label style="display: inline;" for="yes">Yes</label>
+                                    <br>
+                                    <input id="no" name="startupOwner" value="no" type="radio">
+                                    <label style="display: inline;" for="no">No</label>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="register-button" type="submit" class="btn btn-block">Register</button>
+                                    <span>
+                                        Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+                                            data-toggle="modal">Log In</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="verification-form" class="hidden">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <span>A mail has been sent.</span>
+                                    <br>
+                                    <label for="code">Verification Code<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="code"
+                                        placeholder="Enter the verification code." required>
+                                </div>
+                                <span class="text-danger hidden">
+                                    The Verification Code is incorrect. Please input a correct code.
+                                </span>
+                            </div>
+                            <button id="verify-button" type="submit text-right" class="btn">Verify</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Register Modal -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Login</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="login-form-modal-body">
+                        <form id="login-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">ES21</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="summitID"
+                                            placeholder="Enter your Summit ID" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 m-b-0">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="login-password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-danger" id="password-incorrect" style="display: none;">
+                                        The password is incorrect. Please input the correct password.
+                                    </span>
+                                    <a href="/portal/forgot-password" target="_blank" rel="noopener noreferrer">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="login-button" type="submit" class="btn btn-block">Login</button>
+         
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Login Modal -->
+        <!-- Info Modal -->
+        <div class="modal fade" id="info-modal" tabindex="-1" role="modal" aria-labelledby="info-modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Register</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body text-center" id="login-form-modal-body">
+                        <h4>You need to be registered/logged in to E-Summit to register in an event.</h4>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#register-modal" style="color: #181818;">Register</a>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#login-modal" style="color: #181818;">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Info Modal -->
+
+        <section id="About" style="padding-bottom: 10px;background-color: #181818;">
+            <div class="shape-divider" data-position="top" data-flip-horizontal="true" data-flip-vertical="true"
+                data-color="#7341B4" data-style="11" data-height="60"></div>
+            <div class="container">
+
+                <div class="heading-text heading-section text-center">
+                    <h2 style="color: #ffffff;font-family: 'Titillium Web';">What we do!</h2>
+                    <p style="color: #ffffff;">
+                        Get a better understanding of trading strategies and portfolio management through Stocks are
+                        high is a virtual stock trading competition. The event will test the strategic and tactical
+                        skills of the participants and provide them with an opportunity to be familiar with real-world
+                        trading.</p>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    <section id="Rounds" class="background-grey" style="padding-bottom: 10px;padding-top: 100px;">
+        <div class="shape-divider" data-position="top" data-flip-vertical="true" data-color="#181818" data-style="13"
+            data-height="100" style="z-index: 10;"></div>
+
+        <div class="container">
+
+            <div class="heading-text heading-section text-center">
+                <h2 style="font-family: 'Titillium Web';">Rounds</h2>
+                <p>Each participant will be given a fixed amount of virtual money at the start and is expected to invest
+                    their money wisely and profitably. At the end of the competition, participants will be judged
+                    according to the success of their portfolio which primarily means their net worth.
+                    The competition will encourage a participant to involve in a virtual stock simulation- for a
+                    week-long competition on the mobile application Roostoo.
+
+                </p>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-6">
+                <div class="icon-box effect medium border center">
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-chart-line"></i></a>
+                    </div>
+                    <h2>Round 1</h2>
+                    <p>A certain percentage of participants will be disqualified after first round</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="icon-box effect medium border center">
+                    <div class="icon">
+                        <a href="#"><i class="fa fa-user"></i></a>
+                    </div>
+                    <h2>Round 2</h2>
+                    <p>Participants will be judged by their virtual portfolios. </p>
+                </div>
+            </div> -->
+
+                <div class="icon-box effect medium border center">
+                    <div class="icon">
+                        <a href="#"><i class="fa fa-trophy"></i></a>
+                    </div>
+                    <h2>Prize</h3>
+                        <p>Prizes worth <strong>INR 20,000!</strong> </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Page title -->
+    <section id="Mission" style="padding-top:150px" class="page-title text-light"
+        data-bg-parallax="/images/parallax/5.jpg">
+        <div class="container">
+            <div class="shape-divider" data-style="6" data-position="top" data-flip-vertical="true" data-height="100"
+                style="z-index: 0; opacity: 1;"></div>
+
+            <div class="heading-text heading-section text-center">
+                <h2 style="font-family: 'Titillium Web';">Our Mission</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.</p> -->
+            </div>
+        </div>
+    </section>
+    <!-- end: Page title -->
+    <!-- SECTION  -->
+    <section class="background-dark p-b-0" style="padding-top: 0;margin-bottom: 100px;">
+        <div class="container" style="padding-bottom: 100px;">
+            <!-- Text Boxes -->
+            <section class="no-padding equalize" data-equalize-item=".text-box">
+                <div class="row col-no-margin">
+                    <!--Box 1-->
+                    <div class="col-lg-6 textbox1">
+                        <div class="text-box">
+                            <a href="#"> <i class="fa fa-paper-plane"></i>
+                                <h3>Trading</h3>
+                                <p>Introduction to real-world trading. The first step towards being a better trader and
+                                    financial advisor.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--End: Box 1-->
+                    <!--Box 2-->
+                    <div class="col-lg-6 textbox2">
+                        <div class="text-box">
+                            <a href="#"> <i class="fas fa-chart-pie"></i>
+                                <h3>Competition</h3>
+                                <p>Compete against smart minds with similar interests and test one’s mettle.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--End: Box 2-->
+                    <!--Box 3-->
+                    <div class="col-lg-6 textbox3">
+                        <div class="text-box">
+                            <a href="#"> <i class="far fa-lightbulb"></i>
+                                <h3>Analytics</h3>
+                                <p>Apply analytical skills in a restless environment.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--End: Box 3-->
+                    <!--Box 4-->
+                    <div class="col-lg-6 textbox4">
+                        <div class="text-box">
+                            <a href="#"> <i class="fa fa-money-bill "></i>
+                                <h3>Finance</h3>
+                                <p>Learn a variety of financial instruments and their risks and rewards as they apply to
+                                    asset management.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--End: Box 4-->
+                </div>
+            </section>
+        </div>
+        <div class="shape-divider" data-style="10" style="z-index: 0; opacity: 1;" data-height="50"></div>
+
+    </section>
+
+    <!-- Page Content -->
+    <section id="Dates" style="padding-top:0;padding-bottom: 100px;">
+        <div class="container">
+            <div class="heading-text heading-section text-center">
+                <h2 style="font-family: 'Titillium Web';">Dates to remember!</h2>
+            </div>
+            <div class="row justify-content-center">
+                <h3>6th Mar - 12th Mar 2021</h3>
+                <!-- <div class="content col-lg-8"> -->
+                <!-- Timeline -->
+                <!-- <ul class="timeline"> -->
+                <!--Timeline item-->
+                <!-- <li class="timeline-item">
+                                <div class="timeline-icon" style="background-color: #7341B4;">1</div>
+                                <h4>How we started</h4>
+                                <div class="timeline-item-date">21 January, 2020</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem
+                                    ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
+                                    vehicula....</p>
+                            </li> -->
+                <!--end: Timeline item-->
+                <!--Timeline item-->
+                <!-- <li class="timeline-item">
+                                <div class="timeline-icon" style="background-color: #7341B4;">2</div>
+                                <h4>The Plan</h4>
+                                <div class="timeline-item-date">15 May, 2020</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem
+                                    ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
+                                    vehicula....</p>
+                            </li> -->
+                <!--end: Timeline item-->
+                <!--Timeline item-->
+                <!-- <li class="timeline-item">
+                                <div class="timeline-icon" style="background-color: #7341B4;">3</div>
+                                <h4>Research</h4>
+                                <div class="timeline-item-date">18 December, 2020</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem
+                                    ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
+                                    vehicula....</p>
+                            </li> -->
+                <!--end: Timeline item-->
+                <!--Timeline item-->
+                <!-- <li class="timeline-item">
+                                <div class="timeline-icon" style="background-color: #7341B4;">4</div>
+                                <h4>Were we are now</h4>
+                                <div class="timeline-item-date">30 October, 2020</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem
+                                    ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
+                                    vehicula....</p>
+                            </li> -->
+                <!--end: Timeline item-->
+                <!-- </ul> -->
+                <!-- end: Timeline -->
+            </div>
+        </div>
+        </div>
+        <div class="shape-divider" data-color="#7341B4" data-style="11" style="z-index: 10;" data-height="50"></div>
+
+    </section>
+
+    <!-- end: Page Content -->
+
+    <section id="Platform" style="background-color: #181818 !important;padding-top: 100px;" class="background-dark">
+        <div class="shape-divider" data-position="top" data-flip-vertical="true" data-flip-horizontal="true"
+            data-color="#7341B4" data-style="11" style="z-index: 10;" data-height="50"></div>
+
+        <div class="container">
+            <div id="particles-bubble" class="particles"></div>
+            <div class="heading-text heading-section text-center">
+                <h2 style="color: #ffffff;font-family: 'Titillium Web';">Platform</h2>
+                <p style="color: #ffffff;">The platform for the competition:
+                    Roostoo, mock cryptocurrency trading application.
+                    Download the app <a
+                        href="https://play.google.com/store/apps/details?id=com.roostoo.roostoo&hl=en_IN&gl=US">HERE</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sponsors" class="image-block no-padding" style="background-color:#111111;">
+        <div class="container-fluid">
+            <div class="shape-divider" data-position="top" data-flip-vertical="true" data-color="#7341b4"
+                data-height="60" data-style="4" style="z-index: 50 !important;opacity: 1;"></div>
+
+            <div class="row">
+                <div id="stocks-spons-desc" class="col-lg-6 text-light">
+                    <div class="heading-text heading-section text-left" id="stocks-spons-title">
+                        <h2 style="margin-top: 50px;font-family: 'Titillium Web';">About Sponsor</h2>
+                    </div>
+                    <p>Wells Fargo & Company is a leading financial services company that has approximately $1.9
+                        trillion in assets and proudly serves one in three U.S. households and more than 10% of all
+                        middle market companies in the U.S. We provide a diversified set of banking, investment and
+                        mortgage products and services, as well as consumer and commercial finance, through our four
+                        reportable operating segments: Consumer Banking and Lending; Commercial Banking; Corporate and
+                        Investment Banking; and Wealth and Investment Management. Wells Fargo ranked No. 30 on Fortune’s
+                        2020 rankings of America’s largest corporations. In the communities we serve, the company
+                        focuses its social impact on building a sustainable, inclusive future for all by supporting
+                        housing affordability, small business growth, financial health and a low-carbon economy. News,
+                        insights and perspectives from Wells Fargo are also available at Wells Fargo Stories.
+
+
+
+
+                        <br />
+                    </p>
+                    <p>Additional information may be found at <a style="color:cyan !important"
+                            href="https://www.wellsfargo.com" target="_blank">www.wellsfargo.com </a> | Twitter: <a
+                            href="https://twitter.com/WellsFargo?s=20" style="color:cyan !important " target="_blank">
+                            @WellsFargo.</a>
+                        <br />
+                    </p>
+
+                </div>
+                <div id="stocks-spons-logo" class="col-lg-6"
+                    style="background-image:url(/images/StocksAreHigh/Inkedwellsfargologo_LI.jpg); background-size: contain;background-repeat: no-repeat;background-position: center center; margin-top: 200px">
+                </div>
+            </div>
+        </div>
+        <div class="shape-divider" data-color="#7341B4" data-style="11" data-height="50"
+            style="z-index: 50 !important;opacity: 1;"></div>
+
+    </section>
+    <!-- <section id="stock-spons-section" class="dark" style="background-color: #111111;">
+
+    </section> -->
+    <!-- Footer -->
+
+    <footer id="footer" class="light">
+        <div id="particles-bubble" class="particles" style="opacity: 0.3"></div>
+        <div class="footer-content p-b-20">
+            <div class="container">
+                <div class="row gap-y">
+                    <div class="col-lg-2 p-l-30 d-none d-xl-block d-lg-block"></div>
+                    <div class="col-12 col-lg-2 col-md-6" style="text-align: center; width: 100%; padding-bottom: 20px">
+                        <a href="#"><img src="/images/logos/e-cell_logo_wt_captions.png" alt="logo"
+                                style="width: 200px" /></a>
+                    </div>
+                    <div class="col-lg-1 d-none d-xl-block d-lg-block"></div>
+                    <div class="footer-m-fix col-12 col-md-6 col-lg-3 text-center" style="margin-top: 47px">
+                        <!-- Footer widget area 1 -->
+                        <h4>Contact us</h4>
+                        <div class="widget m-b-0 m-l-0">
+                            <ul class="list" style="color: #000000; font-size: 1.4rem; word-wrap: none">
+                                <li>
+                                    <a style="color: #000000" href="#">
+                                        Bhagyesh
+                                        <i class="fa fa-envelope d-lg-none"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    +91 9373459248
+                                    <i class="fa fa-phone" style="
+													-webkit-transform: scaleX(-1);
+													transform: scaleX(-1);
+												"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end: Footer widget area 1 -->
+                    </div>
+
+                    <div class="footer-m-fix col-12 col-md-6 col-lg-3 text-center m-t-70">
+                        <!-- Social icons -->
+                        <h4>We are social</h4>
+                        <div class="social-icons social-icons-colored social-icons-rounded text-center">
+                            <ul>
+                                <li class="social-facebook">
+                                    <a href="https://www.facebook.com/ECELLIITM/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="social-instagram">
+                                    <a href="https://www.instagram.com/ecell_iitm/?hl=en">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="social-linkedin">
+                                    <a href="https://www.linkedin.com/company/e-cell-iitm/?originalSubdomain=in">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="social-youtube">
+                                    <a href="https://www.youtube.com/channel/UCtPazFT8VSfAeREcgag4zMw">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="social-twitter">
+                                    <a href="https://twitter.com/ecelliitm">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-content p-t-20 p-b-20">
+            <div class="container">
+                <div class="row h5">
+                    <div class="col-lg-6">
+                        <div class="d-none d-xl-block d-lg-block">
+                            &copy;Developed by
+                            <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                            <br />
+                            All Rights Reserved.
+                        </div>
+                        <div class="d-block d-lg-none text-center">
+                            &copy;Developed by
+                            <br />
+                            <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                            <br />
+                            All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-none d-xl-block d-lg-block">
+                            <span>For issues related to the website, contact:</span>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    Shobhan <i class="fab fa-whatsapp"></i> : +91 6385188219
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none text-center">
+                            <br />
+                            <span>For issues related to the website, contact:</span>
+                            <div>
+                                Shobhan <i class="fab fa-whatsapp"></i> : +91 6385188219
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <a id="scrollTop"> <i class="fa fa-angle-up"></i><i class="fa fa-angle-double-up"></i> </a>
+
+    <!-- !Don't change script order -->
+
+    <!-- jQuery is needed by POLO so we load it from CDN instead of serving it on our own -->
+    <!-- <script src="/js/jquery.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="/js/plugins.js"></script>
+    <script src="/js/functions.js"></script>
+
+    <!-- Latest particles lib loaded from CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"
+        integrity="sha256-Xt56vRiLO7CCjPyRuztU0NPrYwx4IFIUaHpdxWbFOKY=" crossorigin="anonymous"></script>
+    <script src="/plugins/particles/particles-stars.js" type="text/javascript"></script>
+    <script src="/plugins/particles/particles-bubble.js" type="text/javascript"></script>
+
+    <!-- Validation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+    <!-- My -->
+    <script src="/js/homepage/register-login.js"></script>
+    <!-- <script src="/js/intersection-animate.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SGPNVK9S2D');
+</script>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Web and Mobile Operations team, E-Cell, IITM" />
+	<meta name="description" content="E-Summit 2021 IITM" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link rel="icon" href="/images/logos/favicon.png" sizes="16x16" />
+	<title>Our Sponsors</title>
+
+	<!-- Stylesheets & Fonts -->
+	<script src="/js/loader.js"></script>
+	<link href="/css/plugins.css" rel="stylesheet" type="text/css" />
+	<link href="/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/css/fonts.css" rel="stylesheet" type="text/css" />
+	<link href="/css/inno-theme.css" rel="stylesheet" type="text/css" />
+    <link href="/css/sponsors.css" rel="stylesheet" type="text/css" />
+	<!-- <script src="https://kit.fontawesome.com/6d7c086f8b.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+	<div id="loader-container">
+		<div id="loader">
+			<img id="loader-img" src="/images/logos/esummit-loader.svg" alt="Loading" width="70%"
+				style="margin-bottom: 15px;">
+		</div>
+	</div>
+	<div class="body-inner">
+		<!-- Topbar -->
+		<div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #181818;">
+			<div class="container">
+				<div class="row">
+					<% if(isLoggedIn) { %>
+						<div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+							<a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+								Go To Portal
+							</a>
+						</div>
+						<% } else { %>
+							<div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+								<button class="btn btn-sm shadow" data-target="#register-modal"
+									data-toggle="modal">Register
+									for E-Summit 2021</button>
+								<button class="btn btn-sm shadow" data-target="#login-modal"
+									data-toggle="modal">Login to E-Summit</button>
+							</div>
+							<% } %>
+				</div>
+			</div>
+		</div>
+		<!-- end: Topbar -->
+		<header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true"
+			class="header-mini dark">
+			<div class="header-inner">
+				<div class="container">
+					<!--Logo-->
+					<div id="logo">
+						<a href="/">
+							<img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+							<img class="logo-fixed" src="/images/logos/esummit_clean.png">
+						</a>
+					</div>
+					<!--End: Logo-->
+					<!--Navigation Resposnive Trigger-->
+					<div id="mainMenu-trigger">
+						<a class="lines-button x"><span class="lines"></span></a>
+					</div>
+					<!--end: Navigation Resposnive Trigger-->
+					<!--Navigation-->
+					<div id="mainMenu">
+						<div class="col-md-6 container">
+							<nav>
+								<ul>
+									<li><a href="/" class="scroll-to">HOME</a></li>
+									<li><a href="#sponsors" class="scroll-to">SPONSORS</a></li>
+									<li><a href="#contact" class="scroll-to">CONTACT</a></li>
+									<li class="dropdown">
+										<a href="/" style="color: #E3B34C !important;">
+											Other Conclaves
+										</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown-submenu"><a href="/youth-conclave">Youth Conclave</a>
+												<ul class="dropdown-menu">
+													<li><a href="/event/markathon">Markathon</a></li>
+													<li><a href="/event/elympics">Elympics</a></li>
+													<li><a href="/event/e-awards">E-Awards</a></li>
+													<li><a href="/event/boardroom">Boardroom</a></li>
+													<li><a href="/event/stocks-are-high">Stocks are high</a></li>
+													<li><a href="/event/business-simulation-game">Business Simulation
+															Game</a></li>
+													<li><a href="/event/e-awards">E-Awards</a></li>
+												</ul>
+											</li>
+                                            <li class="dropdown-submenu"><a href="/innovators-conclave">Innovator's Conclave</a>
+												<ul class="dropdown-menu">
+													<li><a href="/event/bootcamp">BootCamp</a></li>
+													<li><a href="/event/unconference">Unconference</a></li>
+													<li><a href="/event/product-construct">Product Construct</a></li>
+												</ul>
+											</li>
+											<li class="dropdown-submenu"><a href="/startup-conclave">Startup Conclave</a>
+												<ul class="dropdown-menu">
+													<li><a href="/event/elevate">Elevate</a></li>
+													<li><a href="/event/startup-showcase">Startup Showcase</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="https://esummitiitm.org/growth-conclave">Growth
+													Conclave</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<!--end: Navigation-->
+				</div>
+			</div>
+		</header>
+		<!-- end: Header -->
+		<!-- data-bg-image="images/homepage/banner_1.webp" -->
+		<section id="slider" class="fullscreen background-dark">
+            <div id="particles-snow" class="particles" data-animate="fadeIn" data-animate-delay="500"></div>
+			<div id="particles-bubble" class="d-md-none particles"></div>
+			
+			<div class="m-0 p-0" style="position: fixed; left: 50%;transform: translate(-50%, 0);">
+				<div id="main-heading" class="text-center text-light">
+					<!-- Captions -->
+					<h1 class="text-lg text-uppercase">Our Sponsors</h1>
+					<a class="btn scroll-to" href="#sponsors" style="color: #181818 !important;">Explore </a>
+					<!-- end: Captions -->
+				</div>
+			</div>
+			<div class="shape-divider" data-style="20"></div>
+		</section>
+
+		<!-- Register Modal -->
+		<div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">E-Summit Registration</h4>
+						<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					</div>
+					<div class="modal-body" id="register-form-modal-body">
+						<form id="register-form" class="form-validate">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="name">Name <span class="text-danger">*</span> </label>
+									<input type="text" class="form-control" name="name" placeholder="Enter your Name"
+										required>
+								</div>
+
+								<div class="form-group col-md-6">
+									<label for="email">Email address <span class="text-danger">*</span></label>
+									<input type="email" class="form-control" name="email" placeholder="Enter your email"
+										required>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="telephone">Contact No. <span class="text-danger">*</span></label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="prefix">+91</span>
+										</div>
+										<input class="form-control" type="phone" name="phone"
+											placeholder="Enter your Telephone number" aria-describedby="prefix"
+											required>
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="password">Password <span class="text-danger">*</span></label>
+									<div class="input-group show-hide-password">
+										<input id="password" class="form-control" name="password"
+											placeholder="Enter password" type="password" required>
+										<div class="input-group-append">
+											<span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+													style="cursor: pointer;"></i></span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-8">
+									<label for="instituteName">Institute name <span class="text-danger">*</span></label>
+									<input type="text" name="instituteName" class="form-control"
+										placeholder="Enter your Institute name" required>
+								</div>
+								<div class="col-md-4 form-group justify-content-end">
+									<label for="startupOwner">Do you have a startup? <span
+											class="text-danger">*</span></label>
+									<input id="yes" name="startupOwner" value="yes" type="radio">
+									<label style="display: inline;" for="yes">Yes</label>
+									<br>
+									<input id="no" name="startupOwner" value="no" type="radio">
+									<label style="display: inline;" for="no">No</label>
+								</div>
+							</div>
+							<div class="row" class="justify-content-center text-center">
+								<div class="col-md-3 d-none d-md-block"></div>
+								<div class="col-12 col-md-6 text-center p-t-10">
+									<button id="register-button" type="submit" class="btn btn-block">Register</button>
+									<span>
+										Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+											data-toggle="modal">Log In</a>
+									</span>
+								</div>
+							</div>
+						</form>
+						<form id="verification-form" class="hidden">
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<span>A mail has been sent.</span>
+									<br>
+									<label for="code">Verification Code<span class="text-danger">*</span></label>
+									<input type="text" class="form-control" name="code"
+										placeholder="Enter the verification code." required>
+								</div>
+								<span class="text-danger hidden">
+									The Verification Code is incorrect. Please input a correct code.
+								</span>
+							</div>
+							<button id="verify-button" type="submit text-right" class="btn">Verify</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end: Register Modal -->
+		<!-- Login Modal -->
+		<div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+			aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">E-Summit Login</h4>
+						<button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+					</div>
+					<div class="modal-body" id="login-form-modal-body">
+						<form id="login-form" class="form-validate">
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="prefix">ES21</span>
+										</div>
+										<input type="text" class="form-control" name="summitID"
+											placeholder="Enter your Summit ID" required>
+									</div>
+								</div>
+								<div class="form-group col-md-12 m-b-0">
+									<label for="password">Password <span class="text-danger">*</span></label>
+									<div class="input-group show-hide-password">
+										<input id="login-password" class="form-control" name="password"
+											placeholder="Enter password" type="password" required>
+										<div class="input-group-append">
+											<span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+													style="cursor: pointer;"></i></span>
+										</div>
+									</div>
+									<span class="text-danger" id="password-incorrect" style="display: none;">
+										The password is incorrect. Please input the correct password.
+									</span>
+									<a href="https://esummitiitm.org/portal/forgot-password" target="_blank"
+										rel="noopener noreferrer">Forgot
+										Password?</a>
+								</div>
+							</div>
+							<div class="row" class="justify-content-center text-center">
+								<div class="col-md-3 d-none d-md-block"></div>
+								<div class="col-12 col-md-6 text-center p-t-10">
+									<button id="login-button" type="submit" class="btn btn-block">Login</button>
+									 
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end: Login Modal -->
+
+		<section id="about">
+			<div id="particles-stars" class="particles" style="opacity:  0.8;"></div>
+			<div class="container p-b-100">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<div class="heading-text heading-section text-right xs-text-left">
+							<h2 class="section-heading">Thank You<br class="d-none d-md-block"> Sponsors</h2>
+						</div>
+					</div>
+					<div class="col-md-1 d-none d-md-block"></div>
+					<div class="col-12 col-md-8">
+						<p class="lead">
+						Every great event has a great backbone. We are extremely thankful to our sponsors for their participation in E-Summit 2021, who have helped us to make the first ever digital E-Summit, 2021 a grand success.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="shape-divider" data-style="11" data-flip-horizontal="true" style="z-index: 100"
+				data-color="#111111"></div>
+		</section>
+		<section id="sponsors" class="fullscreen dark p-t-30 m-t-0">
+
+			<div class="container p-t-0 text-light m-t-0">
+				<div class="text-light heading-text heading-line text-center section-heading"  data-animate="fadeInUp" data-animate-delay="200">
+					<h2>Sponsors</h2>
+				</div>
+				<div class="space"></div>
+                <div class="text-light heading-text heading-line text-center section-heading" data-animate="fadeInUp" data-animate-delay="400">
+					<h4>Elite Sponsors</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+                    <div class="grid-layout grid-1-columns testimonial testimonial-box ," data- data-item="grid-item">
+                        <div class="grid-item ">
+                    
+                            <div class="testimonial-item , box" >
+                               
+                          <a href="https://westbridgecap.com/ " target="blank">  <img class="Img2"  src="/images/sponsors/1.jpg" class="img1" alt="" style="height: 120px; width: 350px;" ></a>
+                          
+                            <h4>Title Sponsor</h4>
+                            </div>
+                            
+                            </div>
+
+
+                    </div>
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                         
+
+                     <div class="grid-item">
+    
+                     <div class="testimonial-item , box" >
+                        <img  class="Img3" src="/images/sponsors/2.png" class="img2" alt="" style="height: 170px; width: 250px;">
+
+                     <h4>Powered by Sponsor</h4>
+                        </div>
+        
+                     </div>
+					 
+					 <div class="grid-item ">
+        
+						<div class="testimonial-item , box" >
+						 <a href="https://startuptn.in/" target="blank">  <img  class="Img3" src="/images/sponsors/3.png" class="img3" alt="" style="height: 100px; width: 260px;margin-top: 40px; margin-bottom: 38px;"></a>
+				  
+						   <h4>Co-Sponsor</h4>
+						   </div>
+		   
+						 </div>
+						 <div class="grid-item ">
+        
+							<div class="testimonial-item , box" >
+							 <a href="https://www.tiic.org/" target="blank">  <img  class="Img8"  src="/images/sponsors/57.jpg" class="img3" alt="" style="height: 175px; width: 150px;"></a>
+					  
+							   <h4>Elevate Title Sponsor</h4>
+							   </div>
+			   
+							 </div>
+					   </div>
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                   
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="https://www.cymorg.com/ " target="blank">  <img class="Img5"  src="/images/sponsors/4.png" class="img1" alt="" style="height: 200px; width: 200px;"></a>
+                      
+                        <h4>Gamification Sponsor</h4>
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://www.wellsfargo.com/ " target="blank"><img   src="/images/sponsors/5.jpg" class="img2" alt="" style="height: 60px; width: 60px; margin-top: 70px;margin-bottom: 70px;" ></a>
+                         
+                        <h4>Banking Sponsor</h4>
+                        </div>
+                        
+                        </div>
+                        <div class="grid-item ">
+                        
+                        <div class="testimonial-item , box" >
+                            <a href="https://aws.amazon.com/free/?trk=ps_a134p000003yhlXAAQ&trkCampaign=acq_paid_search_brand&sc_channel=ps&sc_campaign=acquisition_IN&sc_publisher=google&sc_category=core-main&sc_country=IN&sc_geo=APAC&sc_outcome=Acquisition&sc_detail=aws&sc_content=Brand_Core_aws_e&sc_matchtype=e&sc_segment=453325184782&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCore-Main%7CCore%7CIN%7CEN%7CText&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&ef_id=Cj0KCQiAst2BBhDJARIsAGo2ldVjEL-LuwYNa9XlhxE7Ma9kyes9DEFQbP38UQJu8bT2SI1ZPt6HOk4aAiBIEALw_wcB:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc" target="blank">  <img  class="Img3" src="/images/sponsors/6.png" class="img3" alt="" style="height: 100px; width: 250px; margin-top: 50px ;margin-bottom: 50px;"></a>
+                               
+                        <h4>Technology Sponsor</h4>
+                        </div>
+                        
+                        </div>  
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials -->
+                <div class="text-light heading-text heading-line text-center section-heading" data-animate="fadeInUp" data-animate-delay="100">
+					<h4>Community Partners</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                  
+                    <div class="grid-item">
+                    
+                    <div class="testimonial-item , box" >
+                    <a href="https://www.kindlevc.com/ " target="blank"><img  class="Img" src="/images/sponsors/8.png" class="img2" alt="" style="height: 150px; width: 220px; margin-top: 20px;margin-bottom: 20px;"></a>
+                     
+                    <h4>Mentoring and Incubation Sponsor</h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box" >
+                        <a href="https://diice.org/" target="blank">  <img  class="Img" src="/images/sponsors/9.png" class="img3" alt="" style="height: 190px; width: 200px; margin-bottom: 30px;"></a>
+                           
+                    <h4>Mentoring Sponsor</h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="https://www.theproductfolks.com/ " target="blank">  <img class="Img"  src="/images/sponsors/10.png" class="img1" alt="" style="height: 200px; width: 200px;margin-bottom: 20px;"></a>
+                      
+                        <h4> Knowledge Sponsor</h4>
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://involveedu.com/ " target="blank"><img  class="Img" src="/images/sponsors/11.png" class="img2" alt="" style="height: 200px; width: 200px; margin-bottom: 30px;"></a>
+                         
+                        <h4>Knowledge Sponsor</h4>
+                        </div>
+                        
+                        </div>
+                        <div class="grid-item ">
+                        
+                        <div class="testimonial-item , box" >
+                            <a href="https://10000startupsindia.com/" target="blank">  <img  class="Img" src="/images/sponsors/12.jpeg" class="img3" alt="" style="height: 197px; width: 200px; margin-bottom: 2px;"></a>
+                               
+                        <h4> Fundraising and Outreach Sponsor</h4>
+                        </div>
+                        
+                        </div>  
+                    
+                        <div class="grid-item ">
+                    
+                            <div class="testimonial-item , box">
+                               
+                          <a href="https://flipr.ai/ " target="blank">  <img class="Img"  src="/images/sponsors/13.png" class="img1" alt="" style="height: 200px; width: 200px; margin-top: 10px;margin-bottom: 20px;"></a>
+                          
+                            <h4> Mentoring Sponsor</h4>
+                            </div>
+                            
+                            </div>
+                        
+                            <div class="grid-item">
+                            
+                            <div class="testimonial-item , box" >
+                            <a href=" https://www.simplilearn.com/" target="blank"><img  class="Img3" src="/images/sponsors/14.png" class="img2" alt="" style="height: 100px; width: 250px; margin-top: 55px;margin-bottom: 40px;"></a>
+                             
+                            <h4> Training Sponsor</h4>
+                            </div>
+                            
+                            </div>
+                 
+                   
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials --> 
+				
+                <div class="text-light heading-text heading-line text-center section-heading"  data-animate="fadeInUp" data-animate-delay="100">
+					<h4>Ecosystem Sponsors</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-1-columns testimonial testimonial-box ," data- data-item="grid-item">
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box">
+                       
+                  <a href="http://www.incubation.iitm.ac.in/ " target="blank">  <img class="Img6"  src="/images/sponsors/16.png" class="img1" alt="" style="height: 200px; width: 200px;"></a>
+                  
+                    <h4> Ecosystem Partner</h4>
+                    </div>
+                    
+                    </div>
+					
+
+                 
+                   
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials -->   
+                <div class="text-light heading-text heading-line text-center section-heading"data-animate="fadeInUp" data-animate-delay="100" >
+					<h4>Event Sponsors</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box">
+                       
+                  <a href="https://www.roostoo.com/ " target="blank">  <img class="Img4"  src="/images/sponsors/17.png" class="img1" alt="" style="height: 60px; width: 240px; margin-bottom: 70px;margin-top: 70px;"></a>
+                  
+                    <h4>Platform Sponsor</h4>
+                    </div>
+                    
+                    </div>
+
+                    <div class="grid-item">
+                    
+                    <div class="testimonial-item , box" >
+                    <a href="https://www.cymorg.com/ " target="blank"><img  class="Img5" src="/images/sponsors/4.png" class="img2" alt="" style="height: 200px; width: 200px;"></a>
+                     
+                    <h4>Gamification Sponsor</h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box" >
+						<a href="https://www.wellsfargo.com/ " target="blank"><img   src="/images/sponsors/5.jpg" class="img2" alt="" style="height: 60px; width: 60px; margin-top: 70px;margin-bottom: 70px;" ></a>
+                           
+                    <h4>Banking Sponsor</h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="https://www.agri10x.com/ " target="blank">  <img class="Img3"  src="/images/sponsors/18.png" class="img1" alt="" style="height: 100px; width: 240px; margin-top: 50px;margin-bottom: 53px;"></a>
+                      
+                        <h4> Case Study Sponsor
+                        </h4>
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://www.gullynetwork.com/ " target="blank"><img  class="Img" src="/images/sponsors/19.png" class="img2" alt="" style="height: 200px; width: 200px;"></a>
+                         
+                        <h4> Case Study Sponsor
+                        </h4>
+                        </div>
+                        
+                        </div>
+                        <div class="grid-item ">
+                        
+                        <div class="testimonial-item , box" >
+                            <a href="https://www.ulconsultancy.com/" target="blank">  <img  class="Img" src="/images/sponsors/20.JPG" class="img3" alt="" style="height: 150px; width: 200px;margin-bottom: 22px; margin-top: 28px;"></a>
+                               
+                        <h4>ReviWING Sponsor</h4>
+                        </div>
+                        
+                        </div> 
+					</div>
+					<div class="grid-layout grid-2-columns testimonial testimonial-box ," data- data-item="grid-item">
+
+						<div class="grid-item ">
+                    
+                            <div class="testimonial-item , box">
+                               
+                          <a href="https://www.guvi.in/ " target="blank">  <img class="Img3"  src="/images/sponsors/59.png" class="img1" alt="" style="height: 150px; width: 260px; margin-top: 10px; margin-bottom: 10px;"></a>
+                          
+                            <h4>Case Study Sponsor</h4>
+                            </div>
+                            
+                            </div>
+						<div class="grid-item ">
+                    
+                            <div class="testimonial-item , box">
+                               
+                          <a href="https://www.nimsme.org/ " target="blank">  <img class="Img3"  src="/images/sponsors/21.png" class="img1" alt="" style="height: 80px; width: 260px; margin-top: 40px; margin-bottom: 50px;"></a>
+                          
+                            <h4>Strategize Sponsor</h4>
+                            </div>
+                            
+                            </div>
+        
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials --> 
+                <div class="text-light heading-text heading-line text-center section-heading" data-animate="fadeInUp" data-animate-delay="100">
+					<h4>Workshop Sponsors</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box">
+                       
+                  <a href="https://d-thinking.com/ " target="blank">  <img class="Img3"  src="/images/sponsors/22.png" class="img1" alt="" style="height: 100px; width: 260px;margin-top: 50px; margin-bottom: 50px;"></a>
+                  
+                   
+                    </div>
+                    
+                    </div>
+
+                    <div class="grid-item">
+                    
+                    <div class="testimonial-item , box" >
+                    <a href="https://www.productleadership.com/ " target="blank"><img  class="Img1" src="/images/sponsors/23.png" class="img2" alt="" style="height: 200px; width: 280px;"></a>
+                     
+                   
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box" >
+                        <a href="https://www.davidparrish.com/" target="blank">  <img  class="Img" src="/images/sponsors/24.png" class="img3" alt="" style="height: 120px; width: 220px; margin-top: 45px; margin-bottom: 35px;"></a>
+                           
+             
+                    </div>
+                    
+                    </div>
+		
+	
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="https://www.thesmartbridge.com/" target="blank">  <img class="Img"  src="/images/sponsors/25.png" class="img1" alt="" style="height: 150px; width: 220px; margin-top: 50px; margin-bottom: 53px;"></a>
+                
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://finstreet.in/courses " target="blank"><img  class="Img" src="/images/sponsors/26.jpg" class="img2" alt="" style="height: 200px; width: 200px; margin-top:20px ;margin-bottom: 30px;" ></a>
+                         
+                    
+                        </div>
+                        
+                        </div>
+                         <div class="grid-item ">
+                        
+                         <div class="testimonial-item , box" >
+                            <a href="https://indianleadershipacademy.com/" target="blank">  <img  class="Img3" src="/images/sponsors/50.png" class="img3" alt="" style="height: 250px; width: 250px;"></a>
+                               
+               
+                        </div>
+                        
+                        </div> 
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials --> 
+                <div class="text-light heading-text heading-line text-center section-heading" data-animate="fadeInUp" data-animate-delay="100">
+					<h4>Investment Sponsors</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box">
+                       
+                  <a href="https://www.specialeinvest.com/" target="blank">  <img class="Img"  src="/images/sponsors/28.png" class="img1" alt="" style="height: 200px; width: 200px; "></a>
+                  
+            
+                    </div>
+                    
+                    </div>
+
+                    <div class="grid-item">
+                    
+                    <div class="testimonial-item , box" >
+                    <a href="https://anthillventures.com/ " target="blank"><img  class="Img1" src="/images/sponsors/29.jpg" class="img2" alt="" style="height: 200px; width: 260px;"></a>
+                     
+                    
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box" >
+                        <a href="https://www.100x.vc/" target="blank">  <img  class="Img3" src="/images/sponsors/30.png" class="img3" alt="" style="height: 100px; width: 260px; margin-top: 45px; margin-bottom: 50px;"></a>
+                     
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="http://www.unicornivc.com/" target="blank">  <img class="Img"  src="/images/sponsors/31.jpg" class="img1" alt="" style="height: 200px; width: 200px;"></a>
+                
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://venturecatalysts.in/ " target="blank"><img  class="Img4" src="/images/sponsors/32.jfif" class="img2" alt="" style="height: 120px; width: 230px; margin-top: 37px; margin-bottom: 40px;"></a>
+                         
+                    
+                        </div>
+                        
+                        </div>
+                        <div class="grid-item ">
+                        
+                        <div class="testimonial-item , box" >
+                            <a href="https://kolkataventures.com/" target="blank">  <img  class="Img" src="/images/sponsors/33.jpg" class="img3" alt="" style="height: 197px; width: 200px;"></a>
+                               
+            
+                        </div>
+                        
+                        </div>  <div class="grid-item ">
+                    
+                            <div class="testimonial-item , box">
+                               
+                          
+                          <a href="http://equanimityinvestments.com/ " target="blank">  <img class="Img"  src="/images/sponsors/34.png" class="img1" alt="" style="height: 200px; width: 200px;"></a>
+                   
+                            </div>
+                            
+                            </div>
+        
+                            <div class="grid-item">
+                            
+                            <div class="testimonial-item , box" >
+                            <a href=" https://artha.vc/" target="blank"><img  class="Img" src="/images/sponsors/35.png" class="img2" alt="" style="height: 200px; width: 200px;"></a>
+                     
+                            </div>
+                            
+                            </div>
+                            <div class="grid-item ">
+                            
+                            <div class="testimonial-item , box" >
+                                <a href="https://letsventure.com/" target="blank">  <img  class="Img3" src="/images/sponsors/36.png" class="img3" alt="" style="height: 100px; width: 260px; margin-top: 50px; margin-bottom: 50px;" ></a>
+                                   
+                        
+                            </div>
+                            
+                            </div>
+                        
+                    </div>
+                    </div>
+					<div class="text-light heading-text heading-line text-center section-heading"data-animate="fadeInUp" data-animate-delay="100" >
+						<h4>Kind Sponsors</h4>
+					</div>
+	
+					<div class="bg-overlay" style="z-index: -1"></div>
+					<div class="container text-dark">
+	
+						<div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+						<div class="grid-item ">
+						
+						<div class="testimonial-item , box">
+						   
+					  <a href="https://www.artis.in/ " target="blank">  <img class="Img3"  src="/images/sponsors/47.png" class="img1" alt="" style="height: 120px; width: 240px; margin-top: 65px; margin-bottom: 70px;"></a>
+					  
+						<h4>Digital Gifting Sponsor</h4>
+						</div>
+						
+						</div>
+						<div class="grid-item ">
+						
+							<div class="testimonial-item , box">
+							   
+						  <a href="https://bombayshavingcompany.com/ " target="blank">  <img class="Img3"  src="/images/sponsors/52.png" class="img1" alt="" style="height: 180px; width: 240px; margin-top: 35px; margin-bottom: 40px;"></a>
+						  
+							<h4>Gifting Sponsor</h4>
+							</div>
+							
+							</div>
+						<div class="grid-item ">
+						
+							<div class="testimonial-item , box" >
+								<a href="https://balsamiq.com/" target="blank">  <img  class="Img1" src="/images/sponsors/51.png" class="img3" alt="" style="height: 100px; width: 260px;margin-top: 75px; margin-bottom: 80px;"></a>
+								   
+							<h4>Cloud Sponsor</h4>
+							</div>
+							
+							</div>
+							<div class="grid-item ">
+						
+								<div class="testimonial-item , box" >
+									<a href="https://www.bewakoof.com/" target="blank">  <img  class="Img7" src="/images/sponsors/53.png" class="img3" alt="" style="height: 220px; width: 220px;margin-top: 7px; margin-bottom: 30px;"></a>
+									   
+								<h4>Gifting Sponsor</h4>
+								</div>
+								
+								</div>
+								<div class="grid-item ">
+						
+									<div class="testimonial-item , box" >
+										<a href="https://www.grabon.in/" target="blank">  <img  class="Img3" src="/images/sponsors/54.jfif" class="img3" alt="" style="height: 100px; width: 260px;margin-top: 75px; margin-bottom: 80px;"></a>
+										   
+									<h4>Savings Sponsor</h4>
+									</div>
+									
+									</div>
+									<div class="grid-item ">
+						
+										<div class="testimonial-item , box" >
+											<a href="http://uniexcourierandcargo.com/" target="blank">  <img  class="Img3" src="/images/sponsors/55.jpeg" class="img3" alt="" style="height: 100px; width: 260px;margin-top: 75px; margin-bottom: 80px;"></a>
+											   
+										<h4>Logistics Sponsor</h4>
+										</div>
+										
+										</div>
+						   
+										<div class="grid-item ">
+						
+											<div class="testimonial-item , box" >
+												<a href="https://www.epiphanysnacks.com/" target="blank">  <img  class="Img3" src="/images/sponsors/56.png" class="img3" alt="" style="height: 180px; width: 240px;margin-top: 35px; margin-bottom: 37px;"></a>
+												   
+											<h4>Snacking Sponsor</h4>
+											</div>
+											
+											</div>
+							   
+						<div class="grid-item">
+						
+						<div class="testimonial-item , box" >
+						<a href="https://urbantribe.in/" target="blank"><img  class="Img" src="/images/sponsors/48.png" class="img2" alt="" style="height: 220px; width: 200px;margin-bottom: 32px;"></a>
+						 
+						<h4>Backpack Sponsor</h4>
+						</div>
+						
+						</div>
+						<div class="grid-item ">
+						
+						<div class="testimonial-item , box" >
+							<a href="https://www.thesouledstore.com/" target="blank">  <img  class="Img1" src="/images/sponsors/49.png" class="img3" alt="" style="height: 250px; width: 250px; margin-bottom: 3px;"></a>
+							   
+						<h4> Gifting Sponsor</h4>
+						</div>
+						
+						</div>
+						<div class="grid-item ">
+						
+							<div class="testimonial-item , box" >
+								<a href="https://trendlyne.com/features/" target="blank">  <img  class="Img3" src="/images/sponsors/58.png" class="img3" alt="" style="height: 130px; width: 240px;margin-top: 35px; margin-bottom: 40px;"></a>
+								   
+							<h4>Strategy Sponsor</h4>
+							</div>
+							
+							</div>
+			   
+						</div>
+						</div>
+						
+					<!-- end: Testimonials -->     
+                <!-- end: Testimonials --> 
+                <div class="text-light heading-text heading-line text-center section-heading" data-animate="fadeInUp" data-animate-delay="100">
+					<h4>Media and Outreach Partners</h4>
+				</div>
+
+				<div class="bg-overlay" style="z-index: -1"></div>
+                <div class="container text-dark">
+
+                    <div class="grid-layout grid-3-columns testimonial testimonial-box ," data- data-item="grid-item">
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box">
+                       
+                  <a href="https://theceo.in/" target="blank">  <img class="Img3"  src="/images/sponsors/37.png" class="img1" alt="" style="height: 60px; width: 240px; margin-top: 60px; margin-bottom: 80px; "></a>
+                  
+                    <h4>  Magazine Sponsor
+                    </h4>
+                    </div>
+                    
+                    </div>
+
+                    <div class="grid-item">
+                    
+                    <div class="testimonial-item , box" >
+                    <a href="http://www.startupbuddy.co.in/ " target="blank"><img  class="Img" src="/images/sponsors/38.png" class="img2" alt="" style="height: 200px; width: 200px;"></a>
+                     
+                    <h4> Outreach Sponsor
+                    </h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                        
+                        <div class="testimonial-item , box" >
+                            <a href="https://www.noticebard.com/" target="blank">  <img  class="Img3" src="/images/sponsors/39.png" class="img3" alt="" style="height: 120px; width: 240px;margin-top: 40px; margin-bottom: 40px;"></a>
+                               
+                            <h4>Media Sponsor</h4>
+                        </div>
+                        
+                        </div>  
+                    <div class="grid-item ">
+                    
+                    <div class="testimonial-item , box" >
+                        <a href="https://www.startupgrind.com/" target="blank">  <img  class="Img3" src="/images/sponsors/40.jpeg" class="img3" alt="" style="height: 120px; width: 240px;margin-top: 40px; margin-bottom: 40px;" ></a>
+                           
+                        <h4> Outreach Sponsor
+
+                        </h4>
+                    </div>
+                    
+                    </div>
+                    <div class="grid-item ">
+                    
+                        <div class="testimonial-item , box">
+                           
+                      <a href="https://indianstartups.com/" target="blank">  <img class="Img"  src="/images/sponsors/41.jpeg" class="img1" alt="" style="height: 200px; width: 200px;"></a>
+                      <h4> Outreach Sponsor
+
+                    </h4>
+                        </div>
+                        
+                        </div>
+    
+                        <div class="grid-item">
+                        
+                        <div class="testimonial-item , box" >
+                        <a href="https://www.startupnews.fyi/ " target="blank"><img  class="Img" src="/images/sponsors/42.jpeg" class="img2" alt="" style="height: 200px; width: 200px; "></a>
+                         
+                        <h4> Outreach Sponsor
+
+                        </h4>
+                        </div>
+                        
+                        </div>
+                       
+                        <div class="grid-item ">
+                    
+                            <div class="testimonial-item , box">
+                               
+                          
+                          <a href="https://t-hub.co/ " target="blank">  <img class="Img"  src="/images/sponsors/43.png" class="img1" alt="" style="height: 200px; width: 200px; margin-bottom: 20px;"></a>
+                          <h4> Outreach Sponsor </h4>
+                            </div>
+                            
+                            </div>
+        
+                        
+                           
+                            <div class="grid-item">
+                            
+								<div class="testimonial-item , box" >
+								<a href="https://iitmaa.org/" target="blank"><img  class="Img" src="/images/sponsors/44.png" class="img2" alt="" style="height: 200px; width: 200px; margin-bottom: 20px;"></a>
+								 
+								<h4> Outreach Sponsor </h4>
+								</div>
+								
+								</div>  <div class="grid-item ">
+                            
+                                    <div class="testimonial-item , box">
+                                       
+                                  
+                                  <a href="https://www.dailyhunt.com/ " target="blank">  <img class="Img3"  src="/images/sponsors/45.png" class="img1" alt="" style="height: 80px; width: 240px; margin-top: 60px; margin-bottom: 80px;"></a>
+                                  <h4> Media Sponsor </h4>
+                                    </div>
+                                    
+                                    </div>
+								
+                                    <div class="grid-item">
+                                    
+                                    <div class="testimonial-item , box" >
+                                    <a href=" https://10000startupsindia.com/" target="blank"><img  class="Img" src="/images/sponsors/12.jpeg" class="img2" alt="" style="height: 180px; width: 200px; " ></a>
+                                     
+                                    <h4> Fundraising and Outreach Sponsor </h4>
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="grid-item ">
+                                    
+                                    <div class="testimonial-item , box" >
+                                        <a href="https://internshala.com/" target="blank">  <img  class="Img3" src="/images/sponsors/46.png" class="img3" alt="" style="height: 100px; width: 240px; margin-top: 40px ; margin-bottom: 67px;"></a>
+                                           
+                                        <h4> Outreach Sponsor </h4>
+                                    </div>
+                                    
+                                    </div>
+									<div class="grid-item ">
+                                    
+										<div class="testimonial-item , box" >
+											<a href="https://youthincmag.com/" target="blank">  <img  class="Img3" src="/images/sponsors/60.png" class="img3" alt="" style="height: 100px; width: 240px; margin-top: 40px ; margin-bottom: 67px;"></a>
+											   
+											<h4> Youth Media Sponsor </h4>
+										</div>
+										
+										</div>
+										<div class="grid-item ">
+                                    
+											<div class="testimonial-item , box" >
+												<a href="https://inc42.com/" target="blank">  <img  class="Img3" src="/images/sponsors/61.png" class="img3" alt="" style="height: 100px; width: 240px; margin-top: 40px ; margin-bottom: 67px;"></a>
+												   
+												<h4> Media Sponsor </h4>
+											</div>
+											
+											</div>
+									
+                        
+                    </div>
+                    </div>
+                    
+                <!-- end: Testimonials -->  
+               
+            </div>
+			<div class="shape-divider" data-style="2" data-color="#F8F9FA"></div>
+		</section>
+
+		<footer id="contact" style="z-index: 100000;">
+			<div class="footer-content p-b-20">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-12 col-lg-3 col-md-6"
+							style="text-align: center; width: 100%; padding-bottom: 20px">
+							<a href="#"><img src="/images/logos/e-cell_logo.png" alt="logo" style="width: 200px" /></a>
+						</div>
+						<div class="footer-m-fix col-12 col-md-6 col-lg-6 text-center">
+							<!-- Footer widget area 1 -->
+							<h4>Contact us</h4>
+							<div class="widget m-b-0 m-l-0">
+								<ul class="list" style="font-size: 1.4rem; word-wrap: none">
+									<li>
+										+91 9820233220 <strong>Vaidehi Mishra</strong>
+										<br>
+										
+									<li>
+										<a href=" mailto:corporate_ecell@smail.iitm.ac.in">
+                                           corporate_ecell@smail.iitm.ac.in
+											<i class="fa fa-envelope d-lg-none"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- end: Footer widget area 1 -->
+						</div>
+
+						<div class="footer-m-fix col-12 col-md-6 col-lg-3 text-center">
+							<!-- Social icons -->
+							<h4>We are social</h4>
+							<div class="social-icons social-icons-colored social-icons-rounded text-center">
+								<ul>
+									<li class="social-facebook">
+										<a href="https://www.facebook.com/ECELLIITM/">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li class="social-instagram">
+										<a href="https://www.instagram.com/ecell_iitm/?hl=en">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="social-linkedin">
+										<a href="https://www.linkedin.com/company/e-cell-iitm/?originalSubdomain=in">
+											<i class="fab fa-linkedin"></i>
+										</a>
+									</li>
+									<li class="social-youtube">
+										<a href="https://www.youtube.com/channel/UCtPazFT8VSfAeREcgag4zMw">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li class="social-twitter">
+										<a href="https://twitter.com/ecelliitm">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space d-block d-md-none"></div>
+			</div>
+
+			<div class="copyright-content p-t-20 p-b-20">
+				<div class="container">
+					<div class="row h5">
+						<div class="col-lg-6">
+							<div class="xs-text-center">
+								&copy;Developed by
+								<strong>Web Operations | E-Cell | IIT Madras.</strong>
+								<br />
+								All Rights Reserved.
+							</div>
+						</div>
+						<div class="space d-block d-md-none"></div>
+						<div class="col-lg-6">
+							<div class="xs-text-center">
+								<span>For issues related to the website, contact:</span>
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										Harsh <i class="fab fa-whatsapp"></i> : +91 9345105302
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="space d-block d-md-none"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<a id="scrollTop"> <i class="fa fa-angle-up"></i><i class="fa fa-angle-double-up"></i> </a>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="/js/conclave.js"></script>
+	<script src="/js/plugins.js"></script>
+	<script src="/js/functions.js"></script>
+
+	<!-- Latest particles lib loaded from CDN-->
+	<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"
+		integrity="sha256-Xt56vRiLO7CCjPyRuztU0NPrYwx4IFIUaHpdxWbFOKY=" crossorigin="anonymous"></script>
+	<script src="/plugins/particles/particles-stars.js" type="text/javascript"></script>
+	<script src="/plugins/particles/particles-bubble.js" type="text/javascript"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+	<script src="/js/homepage/register-login.js"></script>
+     <!-- Partical js base file  -->
+  <script src="/plugins/particles/particles.js" type="text/javascript"></script>
+  <!--Particles snow-->
+  <script src="/plugins/particles/particles-snow.js" type="text/javascript"></script>
+
+</body>
+
+</html>

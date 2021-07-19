@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SGPNVK9S2D');
+    </script>
+    <!-- Primary Meta Tags -->
+    <title>BootCamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="BootCamp | ESummit '21 | E-Cell IITM">
+    <meta name="description" content="BootCamp | E-Cell IITM | Launch to the Skies.">
+    <link rel="icon" type="image/png" href="/images/logos/e-cell_favicon.png">
+    <!-- Stylesheets & Fonts -->
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
+    <link href="/css/inno-theme.css" rel="stylesheet">
+</head>
+
+<body style="background: #E3B34C;">
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Topbar -->
+        <div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #181818;">
+            <div class="container">
+                <div class="row">
+                    <% if(isLoggedIn) { %>
+                        <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                            <a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+                                Go To Portal
+                            </a>
+                        </div>
+                        <% } else { %>
+                            <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                
+
+                                <button class="btn btn-sm shadow" data-target="#login-modal"
+                                    data-toggle="modal">Login to E-Summit</button>
+                            </div>
+                            <% } %>
+                </div>
+            </div>
+        </div>
+        <!-- end: Topbar -->
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true"
+            class="header-mini dark">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+                            <img class="logo-fixed" src="/images/logos/esummit_clean.png">
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="col-md-6 container">
+                            <nav>
+                                <ul>
+                                    <li><a href="#about" class="scroll-to">ABOUT</a></li>
+                                    <li><a href="#incentives" class="scroll-to">WHY</a></li>
+                                    <li><a href="#how" class="scroll-to">HOW</a></li>
+                                    <li><a href="#timeline" class="scroll-to">TIMELINE</a></li>
+                                    <li><a href="#faq" class="scroll-to">FAQ</a></li>
+                                    <li><a href="#testimonials" class="scroll-to">TESTIMONIALS</a></li>
+                                    <li><a href="#past" class="scroll-to">PAST TEAMS</a></li>
+                                    <li><a href="#sponsors" class="scroll-to">SPONSORS</a></li>
+                                    <li><a href="#contact" class="scroll-to">CONTACT</a></li>
+                                    <li><a href="/sponsors" class="scroll-to">SPONSORS</a></li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #E3B34C !important;">
+                                            Other Events
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu-title m-l-5 text-light">Innovator's Conclave</li>
+                                            <li><a href="/event/bootcamp">BootCamp</a></li>
+                                            <li><a href="/event/unconference">Unconference</a></li>
+                                            <li><a href="/event/product-construct">Product Construct</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #E3B34C !important;">
+                                            Other Conclaves
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="/youth-conclave">Youth Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/markathon">Markathon</a></li>
+                                                    <li><a href="/event/elympics">Elympics</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+                                                    <li><a href="/event/boardroom">Boardroom</a></li>
+                                                    <li><a href="/event/stocks-are-high">Stocks are high</a></li>
+                                                    <li><a href="/event/business-simulation-game">Business Simulation
+                                                            Game</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="/startup-conclave">Startup
+                                                    Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/elevate">Elevate</a></li>
+                                                    <li><a href="/event/startup-showcase">Startup Showcase</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="https://esummitiitm.org/growth-conclave">Growth
+                                                    Conclave</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- About E-21 -->
+        <section class="fullscreen background-dark p-t-0">
+            <div class="container text-light" id="splash">
+                <div class="row align-items-center" style="flex-wrap: wrap-reverse;">
+                    <div class="col-md-6 col-12 text-center">
+                        <div class="heading-text section-heading">
+                            <h4 style="white-space: nowrap;" class="display-1">Launch to the Skies</h4>
+                        </div>
+                        <% if (isLoggedIn && isRegistered) { %>
+                            <a type="button" class="btn text-uppercase btn-lg"
+                                href="https://esummitiitm.org/portal/event/bootcamp" style="color: #181818 !important;">
+                                Go to Portal
+                            </a>
+                            <% } else { %>
+                                <button class="btn btn-lg shadow disabled" style="cursor: not-allowed !important;">
+                                    Registrations closed
+                                </button>
+                                <% } %>
+                    </div>
+                    <div class="col-1 d-none d-md-block"></div>
+                    <div class="col-md-4 m-b-20 col-12">
+                        <img src="/images/innovators/bootcamp-white-outline-animated.svg" alt="" style="width: 100%;"
+                            data-tilt-glare="true" data-tilt>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="3" data-color="#E3B34C"></div>
+        </section>
+        <!--end: About E-21 -->
+        <!-- Register Modal -->
+        <div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Registration</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="register-form-modal-body">
+                        <form id="register-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name <span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your Name"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="telephone">Contact No. <span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">+91</span>
+                                        </div>
+                                        <input class="form-control" type="phone" name="phone"
+                                            placeholder="Enter your Telephone number" aria-describedby="prefix"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="instituteName">Institute name <span class="text-danger">*</span></label>
+                                    <input type="text" name="instituteName" class="form-control"
+                                        placeholder="Enter your Institute name" required>
+                                </div>
+                                <div class="col-md-4 form-group justify-content-end">
+                                    <label for="startupOwner">Do you have a startup? <span
+                                            class="text-danger">*</span></label>
+                                    <input id="yes" name="startupOwner" value="yes" type="radio">
+                                    <label style="display: inline;" for="yes">Yes</label>
+                                    <br>
+                                    <input id="no" name="startupOwner" value="no" type="radio">
+                                    <label style="display: inline;" for="no">No</label>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="register-button" type="submit" class="btn btn-block">Register</button>
+                                    <span>
+                                        Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+                                            data-toggle="modal">Log In</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="verification-form" class="hidden">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <span>A mail has been sent.</span>
+                                    <br>
+                                    <label for="code">Verification Code<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="code"
+                                        placeholder="Enter the verification code." required>
+                                </div>
+                                <span class="text-danger hidden">
+                                    The Verification Code is incorrect. Please input a correct code.
+                                </span>
+                            </div>
+                            <button id="verify-button" type="submit text-right" class="btn">Verify</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Register Modal -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Login</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="login-form-modal-body">
+                        <form id="login-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">ES21</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="summitID"
+                                            placeholder="Enter your Summit ID" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 m-b-0">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="login-password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-danger" id="password-incorrect" style="display: none;">
+                                        The password is incorrect. Please input the correct password.
+                                    </span>
+                                    <a href="https://esummitiitm.org/portal/forgot-password" target="_blank"
+                                        rel="noopener noreferrer">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="login-button" type="submit" class="btn btn-block">Login</button>
+         
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Login Modal -->
+        <!-- Info Modal -->
+        <div class="modal fade" id="info-modal" tabindex="-1" role="modal" aria-labelledby="info-modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Register</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body text-center" id="login-form-modal-body">
+                        <h4>You need to be registered/logged in to E-Summit to register in an event.</h4>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#register-modal" style="color: #181818;">Register</a>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#login-modal" style="color: #181818;">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Info Modal -->
+        <!-- About us -->
+        <section id="about" class="dark text-light">
+            <div class="shape-divider" data-style="7" data-color="#E3B34C" data-flip-vertical="true"
+                data-flip-horizontal="true" data-position="top"></div>
+            <div class="container p-t-100 p-b-100">
+                <div class="row">
+                    <div class="col-lg-8 m-b-60">
+                        <div class="section-heading heading-text section-heading heading-line">
+                            <h4>What is BootCamp?</h4>
+                        </div>
+                        <!-- <h2>Set your goals high, and don't stop till you get there.</h2> -->
+                        <p class="lead">
+                            Bootcamp is a four-week-long, <strong>Mini Startup
+                                Accelerator cum B-Plan Competition</strong> that provides
+                            early-stage startups with the requisite expertise and skills to make it big in the outside
+                            world.
+                        </p>
+                        <p class="lead">
+
+                            Bootcamp works through a carefully designed mixture of workshops and startup-specific
+                            mentoring that imparts knowledge efficiently. It focusses on participatory learning and
+                            interaction within the cohort to push the limits of startups, generate new perspectives and
+                            nudge founders to be proactive leaders while equipping them with vital social skills
+                            necessary to mobilize people and resources. The prospective outcome of Bootcamp is a cohort
+                            of well-developed startups with a viable Business Plan who are ready for Incubation.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="heading-text section-heading heading-line">
+                            <h4>Our Vision</h4>
+                        </div>
+                        <p class="lead">
+                            Ideas are critical; but execution is the key. With 1.3 billion people, India faces no
+                            shortage of ideas nor human capital. It’s the elusiveness of resources and lack of the
+                            initial push towards actualizing an idea that holds us down. Bootcamp seeks to solve this
+                            very problem and brings ideas closer to reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-md-none d-block space"></div>
+            </div>
+            <div class="shape-divider" data-style="7" data-color="#E3B34C"></div>
+            <!-- <div class="space"></div> -->
+        </section>
+        <!-- end: About us -->
+        <!-- Incentives -->
+        <section id="incentives" class="fullscreen dark lg-p-t-100 xs-p-t-0">
+            <div class="shape-divider" data-style="3" data-color="#E3B34C" data-position="top"
+                data-flip-vertical="true"></div>
+            <div class="container text-light">
+                <div class="section-heading heading-text section-heading heading-line text-light text-center">
+                    <h4>Why participate?</h4>
+                </div>
+                <style>
+                    li.lead {
+                        font-size: 1.3em;
+                        line-height: 2em;
+                    }
+                </style>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                            </div>
+                            <h1 class="font-weight-300" style="font-size: 24px;">Prizes</h1>
+                            <p class="lead">
+                                Total Prize Pool of 2 Lakhs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-user-tie" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">
+                                Mentorship
+                            </h1>
+                            <p class="lead ac-content">
+                                Professional one-on-one mentoring by industry experts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">
+                                Workshops
+                            </h1>
+                            <p class="lead ac-content">
+                                Receive professional training on multiple key facets of entrepreneurship.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-warehouse" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">
+                                Startup Services
+                            </h1>
+                            <p class="lead ac-content">
+                                Best performers will receive legal and technical guidance and support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-handshake" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">Networking</h1>
+                            <p class="lead ac-content">
+                                Networking opportunities for all applicants with VCs, angel investors, founders and
+                                fellow teams.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-video" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">
+                                Media Coverage
+                            </h1>
+                            <p class="lead ac-content">
+                                Opportunity for promising startups to get featured on popular media platforms
+                                and E-Cell IITM handles and newsletters.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-hand-holding-usd" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">
+                                Fundraising Opportunities
+                            </h1>
+                            <p class="lead ac-content">
+                                Top three teams will receive free passes to external fundraising rounds hosted by VCs.
+                                Teams may also receive funding opportunities directly from the Finale Pitch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="icon-box effect large center">
+                            <div class="icon">
+                                <i class="fa fa-hands-helping" aria-hidden="true"></i>
+                            </div>
+
+                            <h1 class="ac-title font-weight-300" style="font-size: 24px;">Incubation
+                                Opportunities</h1>
+                            <p class="lead ac-content">
+                                Opportunites for teams to get incubated in professional Incubators. Outstanding
+                                individuals may also be invited to Entrepreneur-in-Residence programs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Incentives -->
+        <section style="background: transparent !important; height: 100px;">
+            <div class="shape-divider" data-style="5" data-height="100" data-color="#E3B34C"
+                data-flip-horizontal="true"></div>
+        </section>
+        <!-- How and Who Participate -->
+        <section id="how" class="fullscreen text-center dark p-t-0" style="position: sticky; top: 0px;">
+            <div class="shape-divider" data-style="5" data-color="#E3B34C" data-position="top"
+                data-flip-vertical="true"></div>
+            <div class="container m-t-0 p-t-0 text-left">
+                <div class="row">
+                    <div class="col-md-6 col-12 m-b-40">
+                        <div class="heading-text section-heading heading-line text-light section-heading">
+                            <h4>
+                                Who can participate?
+                            </h4>
+                        </div>
+                        <p class="lead text-light">
+                            The event is open to all UG, PG and PhD students of any stream and college. Students who
+                            have graduated in or after 2018 are also eligible. Each team
+                            must
+                            have a <strong>minimum of 2</strong> to a <strong>maximum of 5 members</strong>.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="heading-text section-heading heading-line text-light section-heading">
+                            <h4>
+                                How to participate?
+                            </h4>
+                        </div>
+                        <p class="lead text-light">
+                            <li class="lead text-light">
+                                <a href="https://esummitiitm.org/portal/register/bootcamp"
+                                    style="text-decoration: underline;">Register here</a> for BootCamp before 5th of
+                                February 2021
+                            </li>
+                            <li class="lead text-light">
+                                Complete the <a href="https://esummitiitm.org/portal/event/bootcamp"
+                                    style="text-decoration: underline;">Round 1 questionnaire here </a>. It’s your
+                                gateway to the next rounds of
+                                Bootcamp!
+                            </li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="15" data-color="#E3B34C" data-flip-horizontal="true"
+                data-height="100"></div>
+        </section>
+        <!-- end: How To Participate -->
+        <section style="background: transparent !important; height: 100px;">
+            <div class="shape-divider" data-style="15" data-color="#E3B34C" data-flip-horizontal="true"
+                data-height="100"></div>
+        </section>
+        <!-- Timeline -->
+        <section id="timeline" class="dark p-b-0">
+            <div class="shape-divider" data-style="3" data-flip-vertical="true" data-position="top"
+                data-color="#E3B34C"></div>
+            <div class="space"></div>
+            <div class="heading-text section-heading heading-line text-center text-light section-heading">
+                <h4 class="text-center">Timeline</h4>
+            </div>
+            <div class="container p-b-0 m-b-0 text-light">
+                <ul class="timeline accordion accordion-flat">
+
+                    <li class="timeline-item ac-item p-l-0 m-t-0 m-b-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-book-open" style="color: #181818 !important;"></i>
+                        </div>
+                        <h4>Registrations Window</h4>
+                        <div class="timeline-item-date">15th Jan – 5th Feb </div>
+                    </li>
+
+                    <li class="timeline-item m-t-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-rocket" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Webinar and Speed Networking</h4>
+                            <div class="timeline-item-date">9th Feb, Tuesday (tentative)</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            • Common Webinar for all applicants of Bootcamp on key aspects of Entrepreneurship.
+                            <br>
+                            • Speed Networking sessions for all applicants of Bootcamp with VCs and Angel Investors.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item m-t-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-rocket" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Results of First Shortlisting</h4>
+                            <div class="timeline-item-date">13th Feb, Saturday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            A cohort of 25 teams will be selected from the applications and will proceed to the next
+                            stages of Bootcamp
+                        </p>
+                    </li>
+
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-lightbulb" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Introduction and Networking </h4>
+                            <div class="timeline-item-date">13th Feb, Saturday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            We kick things off with an introduction to
+                            Bootcamp, its objectives, the timeline. The requirements of the report to be submitted on
+                            28th Feb will be laid out. This will be followed by a Networking session with fellow teams.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Business Model Canvas 1 | Allotment of Mentors </h4>
+                            <div class="timeline-item-date">14th Feb, Sunday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            • Workshop on introduction to Business Model Canvas, focussing on Customer Segments,
+                            Value Propositions, Channels and Customer Relationships.
+                            <br>
+                            • Post workshop, each team will be allotted a mentor who will guide the team and help
+                            applying concepts learnt in the workshops to each startup. Mentoring continues
+                            throughout the week in short spells according to the convenience of the teams and the
+                            mentors.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Business Model Canvas 2 </h4>
+                            <div class="timeline-item-date">21th Feb, Sunday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            • Second workshop on Business Model Canvas, focussing on Revenue streams, Key Resources, Key
+                            Activities, Key Partnerships, Cost Structure.
+                            <br>
+                            • Mentoring continues through the week till 27th Feb.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Progress Report Submission</h4>
+                            <div class="timeline-item-date">28th Feb, Sunday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            Report of each team’s progress is to be submitted, applying the concepts learnt in
+                            workshops and in consultation with the mentors.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Second Shortlisting</h4>
+                            <div class="timeline-item-date">3rd March, Wednesday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            Based on the Progress Reports, teams which did not make satisfactory progress or could not
+                            validate their idea are eliminated. Selected teams are given entry to the E-Summit 21’ and
+                            the Pitching Finale.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Pitching Workshop and Networking </h4>
+                            <div class="timeline-item-date">6th March, Saturday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            • A workshop on the art and science of pitching to prepare each team for their final pitch.
+                            This will be followed by Networking sessions with industry experts and fellow teams.
+                            <br>
+                            • The week will be sprinkled with other sessions on starting up. Teams will also have access
+                            to other talks and events of E-Summit 21’.
+
+                        </p>
+                    </li>
+
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <div class="ac-title">
+                            <h4>Finale – Pitch in front of the Judges</h4>
+                            <div class="timeline-item-date">13th March, Saturday</div>
+                        </div>
+                        <p class="lead font-weight-400 ac-content">
+                            - Final pitch in front of judges. Details of the event and rules regarding the pitch will be
+                            shared with the selected teams.
+                        </p>
+                    </li>
+                    <li class="timeline-item ac-item m-b-0 m-t-0 p-l-0">
+                        <div class="timeline-icon" style="background: #E3B34C !important;">
+                            <i class="fa fa-chalkboard-teacher" style="color: #181818 !important;"></i>
+                        </div>
+                        <h4>Declaration of Results </h4>
+                        <div class="timeline-item-date">14th March, Sunday</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- end: Timeline -->
+        <section id="faq" class="dark fullscreen p-t-0 text-light" style="top: 10px; position: sticky !important;">
+            <div class="container p-t-0 m-t-0">
+                <div class="heading-text section-heading heading-line text-light text-center">
+                    <h4>FAQs</h4>
+                </div>
+                <div class="accordion accordion-shadow">
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>Are there any
+                            registration fees?</h5>
+                        <div class="ac-content">
+                            <p>There are no registration fees at any stage of Bootcamp.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>Are cross college
+                            teams allowed?</h5>
+                        <div class="ac-content">
+                            <p>Yes. There are no restrictions on building a team as long as all its members are either
+                                undergraduates, post graduates or PhD fellows.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            How many teams will be shortlisted after the application process?
+                        </h5>
+                        <div class="ac-content">
+                            <p>25 teams.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            What is the Progress Report?
+                        </h5>
+                        <div class="ac-content">
+                            <p>It is a document to be submitted after the main sessions and after one-on-one mentoring
+                                that details
+                                the work done by the startup and key business elements. The exact list of things to be
+                                mentioned will be
+                                shared in the introductory session.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            When will the one-on-one mentoring happen?
+                        </h5>
+                        <div class="ac-content">
+                            <p>Each startup will be allotted a mentor from 13th February to 13th March. Mentoring
+                                happens in short
+                                spells at the mutual convenience of the team and the mentor via any online medium.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            How many teams will be selected after the Report Submission?
+                        </h5>
+                        <div class="ac-content">
+                            <p>The second shortlisting has no fixed number of teams to select. If all the teams show
+                                satisfactory
+                                progress and sustained efforts, all teams will proceed to the Finale.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            When will the prize money be given to the winners?
+                        </h5>
+                        <div class="ac-content">
+                            <p>Prize money will be given lumpsum to the winners in the few days after declaration of
+                                results.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            Do participating teams need to travel for Bootcamp?
+                        </h5>
+                        <div class="ac-content">
+                            <p>No, all stages of this year’s Bootcamp are completely virtual. All you need is internet!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            What sectors do the applying startups need to be in?
+                        </h5>
+                        <div class="ac-content">
+                            <p>We welcome startups from all sectors – from Animal Husbandry to Blockchain! We highly
+                                encourage diverse startups with multidisciplinary teams to apply for Bootcamp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background: transparent !important; height: 300px;">
+            <div class="shape-divider" data-style="15" data-color="#E3B34C" data-flip-horizontal="true"
+                data-height="130"></div>
+        </section>
+        <!-- Testimonials -->
+        <section id="testimonials" class="dark">
+            <div class="shape-divider" data-style="3" data-color="#E3B34C" data-flip-vertical="true" data-height="130"
+                data-position="top"></div>
+            <div class="container">
+                <div class="heading-text section-heading text-center heading-line text-light">
+                    <h4>Testimonials</h4>
+                </div>
+                <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left text-light"
+                    data-items="1" data-autoplay="true" data-loop="false" data-autoplay="1">
+                    <!-- Testimonials item -->
+                    <div class="testimonial-item">
+                        <img src="/images/innovators/rishabh.jpeg" alt="">
+                        <p>We participated in the Bootcamp 2019 and it was really a great experience for all of us. The
+                            mentorship provided by the Bootcamp team and mentors were really greatful. The feedback
+                            which we got, really helped us to see where we are doing wrong, where we should be heading.
+                            Overall it acted as a guiding hand for us. The decisions which we took after whole
+                            experience of Bootcamp helped us to navigate through the market in a more clear and concise
+                            manner</p>
+                        <span>Rishabh Verma</span>
+                        <span>Founder, UrbanMatrix</span>
+                    </div>
+                    <!-- end: Testimonials item-->
+                    <!-- Testimonials item -->
+                    <!-- <div class="testimonial-item">
+                        <img src="/images/innovators/rakesh.jpeg" alt="">
+                        <p>Polo is by far the most amazing template out there! I literally could not be happier that I
+                            chose to buy this template!</p>
+                        <span>Alan Monre</span>
+                        <span>CEO, Square Software</span>
+                    </div> -->
+                    <!-- end: Testimonials item-->
+                    <!-- Testimonials item -->
+                    <div class="testimonial-item">
+                        <img src="/images/innovators/rakesh.jpeg" alt="">
+                        <p>We participated in Bootcamp 2019. Bootcamp is the best opportunity to validate your idea
+                            and get connected to mentor who can guide you in Entrepreneurial world.</p>
+                        <span>Rakesh Raushan</span>
+                        <span>Founder, TechTable</span>
+                    </div>
+                    <!-- end: Testimonials item-->
+                </div>
+            </div>
+        </section>
+        <!-- end: Testimonials -->
+        <!-- Past Teams -->
+        <section id="past" class="dark">
+            <div class="container-fluid">
+                <div class="heading-text section-heading text-center heading-line text-light">
+                    <h4>Past Teams</h4>
+                </div>
+                <div class="carousel equalize testimonial testimonial-box" data-margin="20" data-arrows="false"
+                    data-items="4" data-items-sm="2" data-items-xxs="1" data-equalize-item=".testimonial-item">
+                    <div class="testimonial-item" data-tilt>
+                        <p>
+                            UrbanMatrix builds industry-grade drones and provides aerial solutions that elevate
+                            efficiency and profitability for the industries. Its ultimate aim is to make
+                            drone-integration easier, safer and cheaper for all industries and organizations.
+                        </p>
+                        <span>Rishabh Verma</span>
+                        <span>Urbanmatrix</span>
+                        <span>Bootcamp 2019</span>
+                    </div>
+                    <div class="testimonial-item" data-tilt>
+                        <p>
+                            Tech Table is an online platform that facilitates students to get internships and connects
+                            them to the startup ecosystem. It also provides an array of startup services, from App
+                            development and Animations to Interactive Websites.
+                        </p>
+                        <span>Rakesh Raushan</span>
+                        <span>Tech Table</span>
+                        <span>Bootcamp 2020</span>
+                    </div>
+                    <div class="testimonial-item" data-tilt>
+                        <p>
+                            EdarLabs is building a 21st century pedagogy tool that enables students to explore,
+                            experiment and learn with AR, and VR; assisted by AI. They offer experimental learning
+                            modules which are highly accessible, easy to use and can be deployed on any platform.
+                        </p>
+                        <span>Yashwanth Kumar</span>
+                        <span>EdarLabs</span>
+                        <span>Bootcamp 2019</span>
+                    </div>
+                    <div class="testimonial-item" data-tilt>
+                        <p>
+                            Orbuculum is a cutting-edge healthcare startup that is refining its AI based system that
+                            predicts diseases using genome-based data to be used as a disease prediction model and
+                            screening tool by doctors.
+                        </p>
+                        <span>Orbuculum Genolytics</span>
+                        <span>Pranav Gangwal</span>
+                        <span>Bootcamp 2017</span>
+                    </div>
+                    <div class="testimonial-item" data-tilt>
+                        <p>
+                            DbyT Dynamics is a design and service organization affiliated with the EV ecosystem. They
+                            engage in developing innovative products and building a tech-based platform for mobility in
+                            the service sector, focusing on Agri-Perishables and Micro Logistics.
+                        </p>
+                        <span>Dhairyasheel Deshmukh</span>
+                        <span>DbyT Dynamics</span>
+                        <span>Bootcamp 2019</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Past Teams -->
+        <section id="sponsors" class="p-t-0 p-b-30 dark fullscreen">
+            <div class="container m-t-0 p-t-0 text-light">
+                <div class="heading-text section-heading heading-line text-center">
+                    <h4>Sponsors</h4>
+                </div>
+                <div class="space d-none d-md-block"></div>
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-7 col-md-3">
+                        <img style="width: 100%;" src="/images/innovators/bootcamp-sponsors/10KSI.png"
+                            alt="10000 Startups logo" />
+                        <h2 style="text-decoration: underline;" class="text-center m-b-0">
+                            <a href="https://10000startupsindia.com/" target="_blank" noopener noreferer> 10000 Startups
+                            </a>
+                        </h2>
+                        <h3 class="font-weight-300" style="text-align: center;">Fundraising and Outreach Sponsor</h3>
+                    </div>
+                    <div class="col-7 col-md-3 sm-m-t-30">
+                        <img style="width: 100%;" src="/images/innovators/bootcamp-sponsors/DIICE.png"
+                            alt="DIICE Logo" />
+                        <h2 style="text-decoration: underline;" class="text-center m-b-0">
+                            <a href="https://diice.org/" target="_blank" rel="noreferrer">DIICE</a>
+                        </h2>
+                        <h3 class="font-weight-300" style="text-align: center;">Mentoring Sponsor</h3>
+                    </div>
+                    <div class="col-7 col-md-3 sm-m-t-30">
+                        <img style="width: 100%;" src="/images/innovators/bootcamp-sponsors/kindle.png"
+                            alt="Kindle VC Logo" />
+                        <h2 style="text-decoration: underline;" class="text-center m-b-0">
+                            <a href="https://www.kindlevc.com/" target="_blank" noopener noreferer> Kindle VC
+                            </a>
+                        </h2>
+                        <h3 class="font-weight-300" style="text-align: center;">Mentoring and Incubation Sponsor</h3>
+                    </div>
+                    <div class="col-7 col-md-3 sm-m-t-30">
+                        <img style="width: 100%;" src="/images/innovators/bootcamp-sponsors/iitmic.jpg"
+                            alt="IITMIC Logo" />
+                        <h2 style="text-decoration: underline;" class="text-center m-b-0">
+                            <a href="http://www.incubation.iitm.ac.in/home" target="_blank" rel="noreferrer">IITM IC</a>
+                        </h2>
+                        <h3 class="font-weight-300" style="text-align: center;">Ecosystem Sponsor</h3>
+                    </div>
+                    <div class="col-7 col-md-3 sm-m-t-30">
+                        <img style="width: 100%;" src="/images/innovators/bootcamp-sponsors/noticebard.png"
+                            alt="Noticebard Logo" />
+                        <h2 style="text-decoration: underline;" class="text-center m-b-0">
+                            <a href="https://www.noticebard.com/" target="_blank" rel="noreferrer">Noticebard</a>
+                        </h2>
+                        <h3 class="font-weight-300" style="text-align: center;">Media Sponsor</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="dark" style="height: 300px;">
+            <div class="shape-divider" data-style="15" data-color="#E3B34C" data-flip-horizontal="true"></div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="p-t-0 p-b-60" style="background-color: #E3B34C;">
+            <!-- <div class="shape-divider" data-style="7" data-flip-vertical="true" data-flip-horizontal="true" data-position="top" data-color="#E3B34C" ></div> -->
+            <div class="container" style="display:flex; flex-direction:column; align-items: center;">
+                <h2 class="m-b-10">For queries, contact:</h2>
+                <div>
+                    <div class="row" style="align-items: center;">
+                        <div class="col-2">
+                            <i class="fa-2x icon-mail"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <strong>
+                                events_ecell@smail.iitm.ac.in
+                            </strong>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="align-items: center;">
+                        <div class="col-2">
+                            <i class="fa-2x icon-phone"></i>
+                        </div>
+                        <div class="col-10">
+                            <strong>+91 9390054215</strong> Adithya Beera
+                            <br>
+                            <strong>+91 8709428784</strong> Pratyush
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+        </section>
+        <!-- end: Contact -->
+
+        <!-- Footer -->
+        <footer id="footer" class="dark text-light" style="z-index: 20;">
+            <div class="copyright-content p-t-10 p-b-20">
+                <!-- <hr> -->
+                <div class="container">
+                    <div class="row h5">
+                        <div class="col-lg-6  text-light">
+                            <div class="d-none d-xl-block d-lg-block">
+                                &copy; Developed by <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                                <br>
+                                All Rights Reserved.
+                            </div>
+                            <div class="d-block d-lg-none text-center">
+                                &copy;Developed by
+                                <br>
+                                <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                                <br>
+                                All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-light">
+                            <div class="d-none d-xl-block d-lg-block">
+                                <span>For issues related to the website, contact:</span>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">Abhijit
+                                        <i class="fab fa-whatsapp"></i> : +91 8895219514
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block d-lg-none text-center">
+                                <br>
+                                <span>For issues related to the website, contact:</span>
+                                <div>Abhijit <i class="fab fa-whatsapp"></i> : +91 8895219514</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+    <!--Plugins-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+    <script src="/js/plugins.js"></script>
+    <script src="/js/innovators/bootcamp.js"></script>
+    <!--Template functions-->
+    <script src="/js/functions.js"></script>
+    <script src="/js/homepage/register-login.js"></script>
+</body>
+
+</html>

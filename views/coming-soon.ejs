@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SGPNVK9S2D');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coming Soon</title>
+	<link href="css/plugins.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"><!-- LOAD JQUERY LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+	html, body{
+		margin: 0;
+	}
+
+	.page{
+		display: flex;
+		min-height: 100vh;
+		flex: 1;
+		flex-direction: column;
+		background-color: #181818;
+	}
+	.logo-head-container{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: max-content;
+		padding: 80px;
+	}
+	.logo{
+		display: flex;
+		flex: 0.4;
+		justify-content: center;
+		align-items: center;
+		padding: 80px;
+		padding-top: 0;
+	}
+	.header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 50px;
+		padding-top: 0;
+	}
+	.head-title{
+		font-size: 80px;
+		font-family: 'Open Sans';
+		font-weight: 800;
+		color: #ffffff;
+		line-height: 1.75;
+
+	}
+	.subtitle{
+		font-size: 20px;
+		font-family: 'Open Sans';
+		color: #ffffff;
+		float: right;
+		line-height: 1.5;
+	}
+
+	.count{
+		margin: 10px;
+		padding: 10px;
+
+	}
+
+	@media only screen and (max-width: 600px) {
+		.logo{
+			padding: 0;
+		}
+		.logo-head-container {
+			flex-direction: column;
+			padding: 50px;
+			padding-bottom: 30px;
+		}
+		.header{
+			padding: 0 !important;
+			padding-top: 50px !important;
+		}
+		.count{
+			margin: 10px;
+			padding: 10px;
+		}
+		.head-title{
+			font-size: 50px;
+			font-weight: 700;
+			justify-content: flex-start;
+			align-items: flex-start;
+			line-height: 1.25;
+			float: left !important;
+			text-align: left !important;
+		}
+		.subtitle{
+			margin-top: 20px;
+			font-size: 16px;
+		}
+}
+</style>
+
+<body>
+	<div class="page">
+		<div class="logo-head-container">
+
+			<div class="logo"><img src="/images/innovators/bootcamp-white-outline-animated.svg" width="250" height="auto" alt="logo" /></div>
+			<div class="header">
+				<div class="head-title" data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:center;y:middle;rZ:360deg;opacity:0;","to":"o:1;rZ:15;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'  >BOOT CAMP</div>
+				<div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis doloremque tempora natus ipsa optio iste necessitatibus, alias a nobis sapiente dolores voluptates nesciunt aliquid illum vitae incidunt repudiandae consequuntur distinctio!</div>
+			</div>
+		</div>
+
+
+		<div class="countdown count" style="color: #7341b4; size: 200px;" data-countdown="2021/11/19 12:34:56"></div>
+
+
+	</div>
+
+
+	
+</body>
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+</html>

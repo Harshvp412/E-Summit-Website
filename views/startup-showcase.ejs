@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SGPNVK9S2D');
+</script>
+    <title>Startup Showcase</title>
+    <meta name="title" content="StartupShowcase | E-Cell IITM">
+    <meta name="description"
+        content="E-21 | E-Cell IITM | Innovation sparks learning. E-21 envisions building a strong foundation of innovation, entrepreneurship, and 21st-century skills like problem-solving, critical thinking, creativity, etc among young minds of the nation.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="Landing Page">
+    <meta property="og:url" content="https://ecell.iitm.ac.in/event/e21">
+    <meta property="og:title" content="E-21 | E-Cell IITM">
+    <meta property="og:description"
+        content="E-21 | E-Cell IITM | Innovation sparks learning. E-21 envisions building a strong foundation of innovation, entrepreneurship, and 21st-century skills like problem-solving, critical thinking, creativity, etc among young minds of the nation.">
+    <meta property="og:image" content="/images/e21/logo.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="E-21 | E-Cell IITM">
+    <meta property="twitter:description"
+        content="E-21 | E-Cell IITM | Innovation sparks learning. E-21 envisions building a strong foundation of innovation, entrepreneurship, and 21st-century skills like problem-solving, critical thinking, creativity, etc among young minds of the nation.">
+    <meta property="twitter:image" content="/images/e21/logo.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Web and Mobile Operations, Entrepreneurship Cell, IIT Madras" />
+    <link rel="icon" href="/images/logos/favicon.png" sizes="16x16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Stylesheets & Fonts -->
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link href="/css/startup-theme.css" rel="stylesheet">
+      <!-- Template color -->
+      <link href="/css/color-variations/pink.css" rel="stylesheet" type="text/css" media="screen" title="pink">
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+  
+      <!-- CSS CUSTOM STYLE -->
+      <link rel="stylesheet" type="text/css" href="/css/wedding-style.css" media="screen" />
+</head>
+
+<body style="background: #39BBCB;">
+    <!-- Body Inner -->
+    <div class="body-inner">
+                   <!-- Topbar -->
+                   <div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #181818;">
+                    <div class="container">
+                        <div class="row">
+                           
+                        <% if(isLoggedIn) { %>
+                            <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                <a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+                                    Go To Portal
+                                </a>
+                            </div>
+                            <% } else { %>
+                                <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                    <button class="btn btn-sm shadow" data-target="#login-modal"
+                                        data-toggle="modal">Login to E-Summit</button>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: Topbar --> 
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true"
+            class="header-mini dark">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+                            <img class="logo-fixed" src="/images/logos/esummit_clean.png">
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="col-md-6 container">
+                            <nav>
+                                <ul>
+                                    <li><a href="#about" class="scroll-to">ABOUT</a></li> 
+                                    <li><a href="#faq" class="scroll-to">FAQ</a></li>
+                                    <li><a href="#contact" class="scroll-to">CONTACT</a></li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #39BBCB !important;">
+                                            Other Events
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu-title m-l-5 text-light">Startup Conclave</li>
+                                            <li><a href="/event/elevate">Elevate</a></li>
+												
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #39BBCB !important;">
+                                            Other Conclaves
+                                             
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="/youth-conclave">Youth Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/markathon">Markathon</a></li>
+                                                    <li><a href="/event/elympics">Elympics</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+                                                    <li><a href="/event/boardroom">Boardroom</a></li>
+                                                    <li><a href="/event/stocks-are-high">Stocks are high</a></li>
+                                                    <li><a href="/event/business-simulation-game">Business Simulation
+                                                            Game</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="/innovators-conclave">Innovator's Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/bootcamp">BootCamp</a></li>
+                                                        <li><a href="/event/unconference">Unconference</a></li>
+                                                    <li><a href="/event/product-construct">Product Construct</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="https://esummitiitm.org/growth-conclave">Growth
+                                                    Conclave</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- About E-21 -->
+        <section class="fullscreen background-dark p-t-0">
+            <div class="container" id="splash">
+                <div class="container text-light">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6 col-12 text-center">
+                            <div class="heading-text" data-animate="fadeInUp" data-animate-delay="300">
+                                <h4 style="white-space: nowrap;" class="display-1">Startup Showcase</h4>
+                            </div>
+                            <% if (isLoggedIn && isRegistered) { %>
+                                <a type="button" class="btn text-uppercase btn-lg"
+                                    href="https://esummitiitm.org/portal/event/bootcamp"
+                                    style="color: #181818 !important;">
+                                    Go to Portal
+                                </a>
+                            <% } else { %>
+                                <button class="btn btn-lg shadow disabled"
+                                    style="cursor: not-allowed !important;">
+                                    Registrations closed
+                                </button>
+                            <% } %>
+                        </div>
+                        <div class="col-1 d-none d-md-block"></div>
+                        <div class="col-md-4 m-b-20 col-12">
+                            <img src="/images/startup-conclave/SS_Animated.svg" alt=""
+                                style="width: 90%;" data-tilt-glare="true" data-tilt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="18" data-color="#39BBCB"></div>
+        </section>
+       <!-- Register Modal -->
+       <div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+       aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h4 class="modal-title">E-Summit Registration</h4>
+                   <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+               </div>
+               <div class="modal-body" id="register-form-modal-body">
+                   <form id="register-form" class="form-validate">
+                       <div class="form-row">
+                           <div class="form-group col-md-6">
+                               <label for="name">Name <span class="text-danger">*</span> </label>
+                               <input type="text" class="form-control" name="name" placeholder="Enter your Name"
+                                   required>
+                           </div>
+
+                           <div class="form-group col-md-6">
+                               <label for="email">Email address <span class="text-danger">*</span></label>
+                               <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                                   required>
+                           </div>
+                       </div>
+                       <div class="form-row">
+                           <div class="form-group col-md-6">
+                               <label for="telephone">Contact No. <span class="text-danger">*</span></label>
+                               <div class="input-group mb-3">
+                                   <div class="input-group-prepend">
+                                       <span class="input-group-text" id="prefix">+91</span>
+                                   </div>
+                                   <input class="form-control" type="phone" name="phone"
+                                       placeholder="Enter your Telephone number" aria-describedby="prefix"
+                                       required>
+                               </div>
+                           </div>
+                           <div class="form-group col-md-6">
+                               <label for="password">Password <span class="text-danger">*</span></label>
+                               <div class="input-group show-hide-password">
+                                   <input id="password" class="form-control" name="password"
+                                       placeholder="Enter password" type="password" required>
+                                   <div class="input-group-append">
+                                       <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                               style="cursor: pointer;"></i></span>
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="form-row">
+                           <div class="form-group col-md-8">
+                               <label for="instituteName">Institute name <span class="text-danger">*</span></label>
+                               <input type="text" name="instituteName" class="form-control"
+                                   placeholder="Enter your Institute name" required>
+                           </div>
+                           <div class="col-md-4 form-group justify-content-end">
+                               <label for="startupOwner">Do you have a startup? <span
+                                       class="text-danger">*</span></label>
+                               <input id="yes" name="startupOwner" value="yes" type="radio">
+                               <label style="display: inline;" for="yes">Yes</label>
+                               <br>
+                               <input id="no" name="startupOwner" value="no" type="radio">
+                               <label style="display: inline;" for="no">No</label>
+                           </div>
+                       </div>
+                       <div class="row" class="justify-content-center text-center">
+                           <div class="col-md-3 d-none d-md-block"></div>
+                           <div class="col-12 col-md-6 text-center p-t-10">
+                               <button id="register-button" type="submit" class="btn btn-block">Register</button>
+                               <span>
+                                   Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+                                       data-toggle="modal">Log In</a>
+                               </span>
+                           </div>
+                       </div>
+                   </form>
+                   <form id="verification-form" class="hidden">
+                       <div class="form-row">
+                           <div class="form-group col-md-12">
+                               <span>A mail has been sent.</span>
+                               <br>
+                               <label for="code">Verification Code<span class="text-danger">*</span></label>
+                               <input type="text" class="form-control" name="code"
+                                   placeholder="Enter the verification code." required>
+                           </div>
+                           <span class="text-danger hidden">
+                               The Verification Code is incorrect. Please input a correct code.
+                           </span>
+                       </div>
+                       <button id="verify-button" type="submit text-right" class="btn">Verify</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- end: Register Modal -->
+   <!-- Login Modal -->
+   <div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+       aria-hidden="true">
+       <div class="modal-dialog modal-md">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h4 class="modal-title">E-Summit Login</h4>
+                   <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+               </div>
+               <div class="modal-body" id="login-form-modal-body">
+                   <form id="login-form" class="form-validate">
+                       <div class="form-row">
+                           <div class="form-group col-md-12">
+                               <label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+                               <div class="input-group mb-3">
+                                   <div class="input-group-prepend">
+                                       <span class="input-group-text" id="prefix">ES21</span>
+                                   </div>
+                                   <input type="text" class="form-control" name="summitID"
+                                       placeholder="Enter your Summit ID" required>
+                               </div>
+                           </div>
+                           <div class="form-group col-md-12 m-b-0">
+                               <label for="password">Password <span class="text-danger">*</span></label>
+                               <div class="input-group show-hide-password">
+                                   <input id="login-password" class="form-control" name="password"
+                                       placeholder="Enter password" type="password" required>
+                                   <div class="input-group-append">
+                                       <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                               style="cursor: pointer;"></i></span>
+                                   </div>
+                               </div>
+                               <span class="text-danger" id="password-incorrect" style="display: none;">
+                                   The password is incorrect. Please input the correct password.
+                               </span>
+                               <a href="/portal/forgot-password" target="_blank" rel="noopener noreferrer">Forgot
+                                   Password?</a>
+                           </div>
+                       </div>
+                       <div class="row" class="justify-content-center text-center">
+                           <div class="col-md-3 d-none d-md-block"></div>
+                           <div class="col-12 col-md-6 text-center p-t-10">
+                               <button id="login-button" type="submit" class="btn btn-block">Login</button>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- end: Login Modal -->
+   <!-- Info Modal -->
+   <div class="modal fade" id="info-modal" tabindex="-1" role="modal" aria-labelledby="info-modal"
+       aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h4 class="modal-title">E-Summit Register</h4>
+                   <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+               </div>
+               <div class="modal-body text-center" id="login-form-modal-body">
+                   <h4>You need to be registered/logged in to E-Summit to register in an event.</h4>
+                   <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                       data-target="#register-modal" style="color: #181818;">Register</a>
+                   <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                       data-target="#login-modal" style="color: #181818;">Log In</a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- end: Info Modal -->
+      
+        <!-- About us -->
+        <section id="about" class="fullscreen text-center dark p-t-0" style="position: sticky; top: 0px;">
+            <div class="shape-divider" data-style="6" data-color="#39BBCB" data-position="top"
+                data-flip-vertical="true"></div>
+            <div class="container m-t-0 p-t-0 text-left">
+                <div class="row">
+                    <div class="col-md-6 col-12 m-b-40">
+                        <div class="heading-text heading-line text-light section-heading">
+                            <h4>
+                                What is Startup Showcase?
+                            </h4>
+                        </div>
+                        <p class="lead text-light">
+                            Startup Showcase is a pan-India level event for startups, a platform for innovative startups from all over the country to get in touch with hundreds of potential customers and investors and showcase their potential as future companies.This time we would be having virtual stalls on our E-Summit platform wherein all your videos and brochure would be displayed.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="heading-text heading-line text-light section-heading">
+                            <h4>
+                               Vision
+                            </h4>
+                        </div>
+                        <p class="lead text-light">
+                            With E-Summit going virtual this year, we will have virtual stalls showcasing the various startups. A video about your startup will be played in the stalls. We can also have brochures/ppt/images for the visitors to look at.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="15" data-color="#39BBCB" data-flip-horizontal="true"
+                data-height="100"></div>
+        </section>
+        <!-- end: About us -->
+        <section style="background: transparent !important; height: 100px;">
+            <div class="shape-divider" data-style="15" data-color="#39BBCB" data-flip-horizontal="true"
+                data-height="100"></div>
+        </section>
+        <!-- Timeline -->
+        <section id="timeline" class="dark p-b-0">
+            <div class="shape-divider" data-style="3" data-flip-vertical="true" data-position="top"
+                data-color="#39BBCB"></div>
+            <div class="space"></div>
+        </section>
+
+        <section id="faq" class="dark fullscreen p-t-0 text-light" style="top: 0px; position: sticky !important;">
+            <div class="container p-t-0 m-t-0">
+                <div class="heading-text heading-line text-light text-center" data-animate="fadeInUp" data-animate-delay="300">
+                    <h4>FAQs</h4>
+                </div>
+                <div class="accordion accordion-shadow">
+                    
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>What is the platform where the virtual stalls would be placed?</h5>
+                        <div class="ac-content">
+                            <p> The virtual platform which we are using for the entire E-summit is Zuddl. All the stalls would be placed on the expo section of the platform.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            Will the stalls be placed during the entire duration of E-Summit or on a selected days only?
+                        </h5>
+                        <div class="ac-content">
+                            <p>Your startup stalls would be present for nearly half of the days of the E-Summit. We will let you know further details regarding the exact dates when your stall would be placed.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            Do we need to be present at the stall at all times?
+                        </h5>
+                        <div class="ac-content">
+                            <p>You need not be present at the stall at all times. The audience can ask the questions in the qna chat box which would be sent to you at the end of each day. You could directly answer those questions. Further we would also have your contact information added on your stall so they can also directly reach out to you</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            Is it a paid event?
+                        </h5>
+                        <div class="ac-content">
+                            <p>It is a completely free event this year.</p>
+                        </div>
+                    </div>
+                    <div class="ac-item">
+                        <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                            What kind of audience would I expect?
+                        </h5>
+                        <div class="ac-content">
+                            <p>The audience would include investors, mentors, IITM students, other startups and also the general audience of E-Summit.</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        
+        <section style="background: transparent !important; height: 300px;">
+            <div class="shape-divider" data-style="19" data-color="#39BBCB" data-flip-horizontal="false"
+                data-height="130"></div>
+        </section>
+    
+        <!-- Contact -->
+        <section id="contact" class="p-t-0 p-b-60" style="background-color: #39BBCB;">
+
+            <div class="container" style="display:flex; flex-direction:column; align-items: center;">
+                <h2 class="m-b-10">For queries, contact:</h2>
+                <div>
+                    <div class="row" style="align-items: center;">
+                        <div class="col-2">
+                            <i class="fa-2x icon-mail"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <strong>
+                                services_ecell@smail.iitm.ac.in
+                            </strong>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="align-items: center;">
+                        <div class="col-2">
+                            <i class="fa-2x icon-phone"></i>
+                        </div>
+                        <div class="col-10">
+                            <strong>+91 7988056690</strong> Yuvraj singh 
+                            <br>
+                            <strong>+91 9381571532</strong> Suraj
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+        </section>
+        <!-- end: Contact -->
+
+        <!-- Footer -->
+        <footer id="footer" class="dark text-light" style="z-index: 20;">
+            <div class="copyright-content p-t-10 p-b-20">
+                <!-- <hr> -->
+                <div class="container">
+                    <div class="row h5">
+                        <div class="col-lg-6  text-light">
+                            <div class="d-none d-xl-block d-lg-block">
+                                &copy; Developed by <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                                <br>
+                                All Rights Reserved.
+                            </div>
+                            <div class="d-block d-lg-none text-center">
+                                &copy;Developed by
+                                <br>
+                                <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                                <br>
+                                All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-light">
+                            <div class="d-none d-xl-block d-lg-block">
+                                <span>For issues related to the website, contact:</span>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">Harsh
+                                        <i class="fab fa-whatsapp"></i> : +91 9345105302
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block d-lg-none text-center">
+                                <br>
+                                <span>For issues related to the website, contact:</span>
+                                <div>Harsh <i class="fab fa-whatsapp"></i> : +91 9345105302</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+
+    <!--Plugins-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+
+    <script src="/js/plugins.js"></script>
+    <script src="/js/innovators/bootcamp.js"></script>
+    <!--Template functions-->
+    <script src="/js/functions.js"></script>
+    <!--VEGAS SLIDESHOW-->
+ <link href="plugins/vegas/vegas.min.css" rel="stylesheet">
+ <script src="plugins/vegas/vegas.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+ <script src="/js/homepage/register-login.js"></script>
+
+ <script>
+     $(function () {
+         $("#vegas-slideshow").vegas({
+             delay: 4000,
+             transition: 'fade2',
+             transitionDuration: 1000,
+             slides: [{
+                 src: "/images/startup-conclave/gallery/2.jpg"
+             }, {
+                 src: "/images/startup-conclave/gallery/3.jpg"
+             }, {
+                 src: "/images/startup-conclave/gallery/1.jpg"
+             }]
+         });
+     });
+ </script>
+</body>
+
+</html>

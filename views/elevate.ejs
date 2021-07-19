@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGPNVK9S2D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SGPNVK9S2D');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="E-Cell IIT Madras" />
+    <meta name="description" content="Welcome to E-Cell, IIT Madras">
+    <link rel="icon" href="/images/logos/favicon.png" sizes="16x16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Elevate 4.0</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/startup-theme.css" rel="stylesheet">
+    <link href="/css/elevate.css" rel="stylesheet">
+    <link href='/plugins/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+
+    <!-- Layout Stylesheets & Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet" type="text/css">
+    <link href="/css/color-variations/brown-light.css" rel="stylesheet" type="text/css" media="screen"
+        title="brown-light">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <link rel="icon" href="images/logos/e-cell_favicon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
+    <!-- Template color -->
+    <link href="/css/color-variations/pink.css" rel="stylesheet" type="text/css" media="screen" title="pink">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
+
+    <!-- CSS CUSTOM STYLE -->
+    <link rel="stylesheet" type="text/css" href="/css/wedding-style.css" media="screen" />
+
+</head>
+
+
+<body style="background: black">
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Topbar -->
+        <div id="topbar" class="topbar-fullwidth dark p-t-10" style="background-color: #181818;">
+            <div class="container">
+                <div class="row">
+                    <% if(isLoggedIn) { %>
+                        <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                            <a class="btn btn-sm m-l-0 shadow" href="/go-portal">
+                                Go To Portal
+                            </a>
+                        </div>
+                        <% } else { %>
+                            <div class="col-12" style="display: flex; align-items: flex-end; justify-content: flex-end">
+                                
+
+                                <button class="btn btn-sm shadow" data-target="#login-modal"
+                                    data-toggle="modal">Login to E-Summit</button>
+                            </div>
+                            <% } %>
+                </div>
+            </div>
+        </div>
+        <!-- end: Topbar -->
+        <!-- Header -->
+        <header id="header" data-fullwidth="true" data-transparent="true" data-responsive-fixed="true"
+            class="header-mini dark">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="/">
+                            <img class="logo-default" src="/images/logos/esummit-white.png" alt="E-Cell-Logo">
+                            <img class="logo-fixed" src="/images/logos/esummit_clean.png">
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="col-md-6 container">
+                            <nav>
+                                <ul>
+                                    <li><a href="#about" class="scroll-to">ABOUT</a></li>
+                                    <li><a href="#stats" class="scroll-to">STATS</a></li>
+                                    <li><a href="#rounds" class="scroll-to">ROUNDS</a></li>
+                                    <li><a href="#timeline" class="scroll-to">TIMELINE</a></li>
+                                    <li><a href="#gallery" class="scroll-to">GALLERY</a></li>
+                                    <li><a href="#testimonials" class="scroll-to">TESTIMONIALS</a></li>
+                                    <li><a href="#sponsors" class="scroll-to">SPONSORS</a></li>
+                                    <li><a href="#faq" class="scroll-to">FAQ</a></li>
+                                    <li><a href="#contact" class="scroll-to">CONTACT</a></li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #39BBCB !important;">
+                                            Other Events
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                         
+                                            <li><a href="/event/startup-showcase">Startup Showcase</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="/" style="color: #39BBCB !important;">
+                                            Other Conclaves
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu"><a href="/youth-conclave">Youth Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/markathon">Markathon</a></li>
+                                                    <li><a href="/event/elympics">Elympics</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+                                                    <li><a href="/event/boardroom">Boardroom</a></li>
+                                                    <li><a href="/event/stocks-are-high">Stocks are high</a></li>
+                                                    <li><a href="/event/business-simulation-game">Business Simulation
+                                                            Game</a></li>
+                                                    <li><a href="/event/e-awards">E-Awards</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="/innovators-conclave">Innovator's
+                                                    Conclave</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/event/bootcamp">BootCamp</a></li>
+                                                    <li><a href="/event/unconference">Unconference</a></li>
+                                                    <li><a href="/event/product-construct">Product Construct</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="https://esummitiitm.org/growth-conclave">Growth
+                                                    Conclave</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- Slider with Particles -->
+        <section class="fullscreen background-colored elevate-logo-registerbtns"
+            style="background-color: black;display:flex;margin-top: 60px;flex-direction: column;">
+            <div class="logo" data-animate="fadeInUp" data-animate-delay="6000"
+                style=" display: flex; align-items: flex-end;margin-top: 20px; z-index: 1000;">
+                <img src="/images/startup-conclave/Elevate_logo_white.png" alt="" style="width: 150px"
+                    data-tilt-glare="true" data-tilt>
+            </div>
+            <div class="animation01 " style="display:flex; align-self: center;">
+                <div class="rhombus_small">
+                    <div class="rhombus">
+                        <div class="border_box">
+                            <span class="line line01"></span>
+                            <span class="line line02"></span>
+                            <span class="line line03"></span>
+                            <span class="line line04"></span>
+                            <span class="circle circle01"></span>
+                            <span class="circle circle02"></span>
+                            <span class="circle circle03"></span>
+                            <span class="circle circle04"></span>
+                            <span class="animation_line animation_line01"></span>
+                            <span class="animation_line_wrapper animation_line02_wrapper"><span
+                                    class="animation_line animation_line02"></span></span>
+                            <span class="animation_line animation_line03"></span>
+                            <span class="animation_line_wrapper animation_line04_wrapper"><span
+                                    class="animation_line animation_line04"></span></span>
+                            <span class="animation_line animation_line05"></span>
+                            <span class="animation_line_wrapper animation_line06_wrapper"><span
+                                    class="animation_line animation_line06"></span></span>
+                            <span class="animation_line animation_line07"></span>
+                            <span class="animation_line_wrapper animation_line08_wrapper"><span
+                                    class="animation_line animation_line08"></span></span>
+                        </div>
+                        <div class="wave">
+                            <div class="wave_wrapper">
+                                <div class="wave_box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animation02" style="display:flex; align-self: center;">
+                <div class="rhombus_box">
+                    <span class="rhombus_item_wrapper rhombus_item01_wrapper"><span class="rhombus_item"></span></span>
+                    <span class="rhombus_item_wrapper rhombus_item02_wrapper"><span class="rhombus_item"></span></span>
+                </div>
+                <div class="double_content">
+                    <div class="double_wrapper02 dotted02">
+                        <div class="dotted_hide">
+                            <div class="double_wrapper01 dotted01"><span class="dotted_right"></span></div>
+                        </div>
+                    </div>
+                    <div class="double_wrapper02 white02">
+                        <div class="double_wrapper01 white01"></div>
+                    </div>
+                    <div class="double_wrapper02 gray02">
+                        <div class="double_wrapper01 gray01"></div>
+                    </div>
+                    <div class="double_wrapper02 orange02">
+                        <div class="double_wrapper01 orange01"></div>
+                    </div>
+                </div>
+                <div class="name">
+                    <p>ELEVATE 4.0</p>
+                    <span class="name_circle01"></span>
+                    <span class="name_circle02"></span>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-self:center; padding-bottom: 50px;">
+
+                <% if (isLoggedIn && isRegistered) { %>
+                    <a type="button" class="btn text-uppercase btn-lg" href="#" style="align-self:flex-start;">
+                        Go to Portal
+                    </a>
+                    <% } else { %>
+                        <button class="btn btn-light btn-outline btn-reveal btn-rounded"
+                            style="display:flex; align-items:center; justify-content:center;"  data-animate="fadeInUp" data-animate-delay="6100"
+                            style="align-self:flex-start; cursor: not-allowed !important;">
+                            <p class="register-colour">
+                                Registrations closed</p>
+                        </button>
+                        <% } %>
+
+            </div>
+
+        </section>
+        <!-- end:  Slider with Particles -->
+        <!-- About us -->
+        <section id="about" class="dark text-light aboutus" style="position: sticky; top: 50px;">
+            <div class="shape-divider" data-style="20" data-color="#39BBCB" data-flip-vertical="true"
+                data-flip-horizontal="true" data-position="top"></div>
+            <div class="container p-t-100 p-b-100">
+                <div class="row">
+                    <div class="col-lg-4 m-b-60">
+                        <div class="heading-text heading-line text-light section-heading" style="padding-top: 30px;"
+                            data-animate="fadeInLeft" data-animate-delay="200">
+                            <h4>What is Elevate 4.0?</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 m-b-60" style="padding-top: 30px;" data-animate="fadeInLeft"
+                        data-animate-delay="400">
+                        <p class="lead">
+                            Elevate is a pan-India level fund-raising event, organized during the annual entrepreneurial
+                            fest, E-Summit, that aims to bring eminent startups across the nation and world-class
+                            mentors and investors together, thus providing a sublime platform for the investors to
+                            network with and invest in the most promising startups in the country.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 m-b-60" style="padding-top: 30px;" data-animate="fadeInLeft"
+                        data-animate-delay="600">
+                        <p class="lead">
+                            Elevate gives the startups an opportunity to elevate their skills and at the same time,raise
+                            funds and get themselves into the tremendous pool of market opportunities and resources
+                            available.The most prominent and trusted Venture Capitalists of India will get an
+                            opportunity to interact with potential early stage startups of the country.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="d-md-none d-block space"></div>
+            </div>
+            <div class="shape-divider" data-style="20" data-color="#39BBCB"></div>
+            <!-- <div class="space"></div> -->
+        </section>
+        <!-- end: About us -->
+
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="register-modal" tabindex="-1" role="modal" aria-labelledby="register-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Registration</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="register-form-modal-body">
+                        <form id="register-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Name <span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" name="name" placeholder="Enter your Name"
+                                        required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="telephone">Contact No. <span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">+91</span>
+                                        </div>
+                                        <input class="form-control" type="phone" name="phone"
+                                            placeholder="Enter your Telephone number" aria-describedby="prefix"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="instituteName">Institute name <span class="text-danger">*</span></label>
+                                    <input type="text" name="instituteName" class="form-control"
+                                        placeholder="Enter your Institute name" required>
+                                </div>
+                                <div class="col-md-4 form-group justify-content-end">
+                                    <label for="startupOwner">Do you have a startup? <span
+                                            class="text-danger">*</span></label>
+                                    <input id="yes" name="startupOwner" value="yes" type="radio">
+                                    <label style="display: inline;" for="yes">Yes</label>
+                                    <br>
+                                    <input id="no" name="startupOwner" value="no" type="radio">
+                                    <label style="display: inline;" for="no">No</label>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="register-button" type="submit" class="btn btn-block">Register</button>
+                                    <span>
+                                        Already registered? <a href="#" data-target="#login-modal" data-dismiss="modal"
+                                            data-toggle="modal">Log In</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                        <form id="verification-form" class="hidden">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <span>A mail has been sent.</span>
+                                    <br>
+                                    <label for="code">Verification Code<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="code"
+                                        placeholder="Enter the verification code." required>
+                                </div>
+                                <span class="text-danger hidden">
+                                    The Verification Code is incorrect. Please input a correct code.
+                                </span>
+                            </div>
+                            <button id="verify-button" type="submit text-right" class="btn">Verify</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Register Modal -->
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="modal" aria-labelledby="login-modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Login</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body" id="login-form-modal-body">
+                        <form id="login-form" class="form-validate">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="summitID">E-Summit ID<span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="prefix">ES21</span>
+                                        </div>
+                                        <input type="text" class="form-control" name="summitID"
+                                            placeholder="Enter your Summit ID" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12 m-b-0">
+                                    <label for="password">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group show-hide-password">
+                                        <input id="login-password" class="form-control" name="password"
+                                            placeholder="Enter password" type="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="icon-eye-off" aria-hidden="true"
+                                                    style="cursor: pointer;"></i></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-danger" id="password-incorrect" style="display: none;">
+                                        The password is incorrect. Please input the correct password.
+                                    </span>
+                                    <a href="/portal/forgot-password" target="_blank" rel="noopener noreferrer">Forgot
+                                        Password?</a>
+                                </div>
+                            </div>
+                            <div class="row" class="justify-content-center text-center">
+                                <div class="col-md-3 d-none d-md-block"></div>
+                                <div class="col-12 col-md-6 text-center p-t-10">
+                                    <button id="login-button" type="submit" class="btn btn-block">Login</button>
+         
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Login Modal -->
+        <!-- Info Modal -->
+        <div class="modal fade" id="info-modal" tabindex="-1" role="modal" aria-labelledby="info-modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">E-Summit Register</h4>
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    </div>
+                    <div class="modal-body text-center" id="login-form-modal-body">
+                        <h4>You need to be registered/logged in to E-Summit to register in an event.</h4>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#register-modal" style="color: #181818;">Register</a>
+                        <a class="btn btn-sm" data-toggle="modal" type="button" data-dismiss="modal"
+                            data-target="#login-modal" style="color: #181818;">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end: Info Modal -->
+        <!-- Our numbers -->
+        <section id="stats" class="dark text-light" style="position: sticky; top: 50px;">
+            <div class="shape-divider" data-style="18" data-color="#39BBCB" data-flip-vertical="true"
+                data-flip-horizontal="true" data-position="top"></div>
+
+            <div class="container" style="padding-top: 100px;">
+                <div class="heading-text heading-line text-center text-light section-heading" data-animate="fadeInUp"
+                    data-animate-delay="300">
+                    <h4 class="text-center">Stats </h4>
+                </div>
+                <div class="row" style="padding-top:50px ;">
+                    <div class="col-lg-4">
+
+                        <div class="text-center text-light">
+
+                            <div class="counter"> <span data-suffix="+ " data-speed="2000" data-refresh-interval="50"
+                                    data-to="200" data-from="150" data-seperator="true"></span> </div>
+                            <div class="seperator seperator-small"></div>
+                            <h4 style="font-family:Andika; font-weight: bold;"><strong>Registrations</strong></h4>
+                            </br></br>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="text-center text-light">
+
+                            <div class="counter"> <span data-suffix="+ " data-speed="2000" data-refresh-interval="50"
+                                    data-to="10" data-from="6" data-seperator="true"></span> </div>
+                            <div class="seperator seperator-small"></div>
+                            <h4 style="font-family:Andika; font-weight: bold;"><strong>Sponsors</strong></h4></br></br>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="text-center text-light">
+
+                            <div class="counter"> <span data-suffix="+" data-speed="2000" data-refresh-interval="23"
+                                    data-to="100000000" data-from="69500000" data-seperator="true"></span> </div>
+                            <div class="seperator seperator-small"></div>
+                            <h4 style="font-family:Andika; font-weight: bold;"> <strong>Investment</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    <section class="dark text-light">
+        <div class="shape-divider" data-style="20" data-color="#39BBCB" data-flip-vertical="true"
+            data-flip-horizontal="true" data-position="top"></div>
+    </section>
+    <!-- Rounds -->
+    <!-- Text Boxes -->
+    <section id="rounds" class="no-padding equalize dark " data-equalize-item=".text-box">
+        <div class="fullscreen-container">
+            <div class="heading-text heading-line text-center text-light section-heading" data-animate="fadeInDown"
+                data-animate-delay="300" style="margin-top: 20px;">
+                <h4 class="text-center">Rounds </h4>
+            </div>
+
+            <div class="row" style="margin: 10px; margin-bottom: 30px;">
+                <!--Box 1-->
+                <div class="col-lg-3 , text-dark" data-animate="fadeInUp" data-animate-delay="400">
+                    <div class="text-box , Box"
+                        style="background-color:rgb(238, 234, 234); box-shadow: 8px 5px 5px rgb(78, 78, 78); height: 300px;">
+                        <a> <i class="fa fa-address-card"></i>
+                            <h3>Phase 1</h3>
+                            <p>The registered startups will pitch to a panel of experts, and the top 30 startups will be
+                                shortlisted for the next round. </p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--End: Box 1-->
+                <!--Box 2-->
+                <div class="col-lg-3 , text-dark" data-animate="fadeInDown" data-animate-delay="800">
+                    <div class="text-box , Box"
+                        style="background-color:rgb(238, 234, 234); box-shadow: 8px 5px 5px rgb(78, 78, 78); height: 300px;">
+                        <a> <i class="fa fa-thumbs-up"></i>
+                            <h3>Phase 2 </h3>
+                            <p>The startups will be pitching again to a panel of experts followed by a Q&A session and
+                                the top 10 startups will be shortlisted for final round.</p>
+                        </a>
+                    </div>
+                </div>
+                <!--End: Box 2-->
+                <!--Box 3-->
+                <div class="col-lg-3 , text-dark " data-animate="fadeInUp" data-animate-delay="1200">
+                    <div class="text-box , Box"
+                        style="background-color:rgb(238, 234, 234); box-shadow: 8px 5px 5px rgb(78, 78, 78); height: 300px; ">
+                        <a> <i class="fa fa-gift"></i>
+                            <h3>Finale</h3>
+                            <p>The 10 startups will be pitching their startup in front of some of best Venture
+                                Capitalist firms in India and an opportunity to get funding up to 8 figures.
+                            </p>
+                            </br>
+
+                        </a>
+                    </div>
+                </div>
+                <!--End: Box 3-->
+                <!--Box 4-->
+                <div class="col-lg-3 , text-dark " data-animate="fadeInDown" data-animate-delay="1600">
+                    <div class="text-box , Box"
+                        style="background-color:rgb(238, 234, 234); box-shadow: 8px 5px 5px rgb(78, 78, 78); height: 300px;">
+                        <a> <i class="fa fa-hands-helping"></i>
+                            <h3>Connect Up</h3>
+                            <p>The pitching will be followed by intensive one to one meetings with the firms interested
+                                in investing in any of the finalists.</p>
+                        </a>
+                    </div>
+                </div>
+                <!--End: Box 4-->
+            </div>
+    </section>
+    <!-- end: Text Boxes -->
+    </section>
+    <!-- end: Our numbers -->
+    <!-- Timeline -->
+    <section id="timeline" style="height: max-content ;" class="dark text-light" style="position: sticky; top: 50px;">
+        <div class="shape-divider" data-style="3" data-color="#39BBCB" data-flip-vertical="true"
+            data-flip-horizontal="true" data-position="top"></div>
+        <div class="container p-t-100 p-b-100" data-animate="fadeInUp" data-animate-delay="300">
+            <div class="heading-text heading-line text-center text-light section-heading">
+                <h4 class="text-center">Timeline</h4>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Registrations for first round</h3>
+                        </div>
+                        <div class="time">
+                            <h4>24th January 2021</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>First round of pitching</h3>
+
+                        </div>
+                        <div class="time">
+                            <h4>19th-21st February </h4>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <div class="content">
+                            <h3>Submission of pitch video</h3>
+
+                        </div>
+                        <div class="time">
+                            <h4>24th February 2021</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Second round of pitching </h3>
+
+                        </div>
+                        <div class="time">
+                            <h4>27th-28th February</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Prime Investor talk for 30-40 startup</h3>
+
+                        </div>
+                        <div class="time">
+                            <h4>5th March 2021</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Finale</h3>
+
+                        </div>
+                        <div class="time">
+                            <h4>6th-7th March 2021</h4>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="content">
+                            <h3>Connect Up</h3>
+                        </div>
+                        <div class="time">
+                            <h4>8th-14th March 2021</h4>
+                        </div>
+                    </li>
+
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="d-md-none d-block space"></div>
+        </div>
+        <div class="shape-divider" data-style="3" data-color="#39BBCB"></div>
+        <!-- <div class="space"></div> -->
+    </section>
+    <!-- end: About us -->
+    <!-- GALLERY -->
+    <section id="gallery" class="p-t-0 dark" style=" background-position:bottom right; background-repeat:no-repeat;">
+        <div class="container">
+            <div class="heading-text heading-line text-center section-heading text-light" style="padding-top: 50px;"
+                data-animate="fadeInUp" data-animate-delay="300">
+                <h4>Conclave Gallery</h4>
+            </div>
+
+            <div class="portfolio">
+
+
+                <div id="portfolio" class="grid-layout grid-4-columns" data-margin="10" data-lightbox="gallery"
+                    data-item="grid-item">
+
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/1.jpg">
+                            <img src="/images/startup-conclave/gallery/1.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="wedding-gallery-item large-width grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/2.jpg">
+                            <img src="/images/startup-conclave/gallery/2.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/3.jpg">
+                            <img src="/images/startup-conclave/gallery/3.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/4.jpg">
+                            <img src="/images/startup-conclave/gallery/4.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/5.jpg">
+                            <img src="/images/startup-conclave/gallery/5.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/6.jpg">
+                            <img src="/images/startup-conclave/gallery/6.jpg" alt="">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/7.jpg">
+                            <img src="/images/startup-conclave/gallery/7.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/8.jpg">
+                            <img src="/images/startup-conclave/gallery/8.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                    <div class="wedding-gallery-item grid-item">
+                        <a data-lightbox="gallery-image" href="/images/startup-conclave/gallery/9.jpg">
+                            <img src="/images/startup-conclave/gallery/9.jpg" alt="">
+
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- end: Portfolio Items -->
+            </div>
+        </div>
+    </section>
+    <!-- end: GALLERY -->
+
+
+    <div class="shape-divider" data-style="15" data-color="#39BBCB" data-flip-horizontal="true" data-height="330"></div>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="dark">
+        <div class="shape-divider" data-style="3" data-color="#39BBCB" data-flip-vertical="true" data-height="130"
+            data-position="top"></div>
+        <div class="container">
+            <div class="heading-text text-center heading-line text-light">
+                <h4>Testimonials</h4>
+            </div>
+            <div class="carousel arrows-visibile testimonial testimonial-single testimonial-left text-light"
+                data-items="1" data-autoplay="true" data-loop="false" data-autoplay="1">
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="/images/logos/esummit_clean.png" alt="">
+                    <p>Elevate was my first interaction with E-Cell IITM. Great learning to see what are the different
+                        ideas put up by the teams. Interacted with a lot of startups. Loved the variety of ideas, the
+                        excitement, the enthusiasm. It was contagious and would love to see more coming from IIT Madras.
+                    </p>
+                    <span>Sanjay Mehta</span>
+                    <span>Founder & Partner, 100X.VC</span>
+                </div>
+                <!-- end: Testimonials item-->
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="/images/logos/esummit_clean.png" alt="">
+                    <p> It was my pleasure to be here, we have less opportunity in the north-east, I feel very
+                        privileged to see lots of entrepreneurs, unicorns and startups. I really want to tell all the
+                        budding entrepreneurs from North East to come here. It is really eye-opening for me. Really nice
+                        and very happy to see how the events are being organized.</p>
+                    <span>Dr. Dayananda Meetei</span>
+                    <span>Winner-2020</span>
+                </div>
+                <!-- end: Testimonials item-->
+                <!-- Testimonials item -->
+                <div class="testimonial-item">
+                    <img src="/images/logos/esummit_clean.png" alt="">
+                    <p>I have to say that it is a wonderful experience, never expected that students of your age would
+                        do such beautiful co-ordination, right from the first round in Hyderabad where we heard the
+                        initial pitches to the final co-ordination here, I think it is totally a wonderful experience,
+                        thanks for inviting us here.</p>
+                    <span>Prashanth Reddy</span>
+                    <span>Runner Up</span>
+                </div>
+                <!-- end: Testimonials item-->
+
+            </div>
+        </div>
+    </section>
+    <!-- end: Testimonials -->
+    <!-- Content -->
+    <section id="sponsors" class="dark">
+        <div class="container">
+            <!-- Gallery -->
+            <div class="heading-text heading-line text-center text-light section-heading" data-animate="fadeInUp"
+                data-animate-delay="300">
+                <h4>Sponsors</h4>
+            </div>
+            <div class="heading-text heading-line text-center text-light section-heading" data-animate="fadeInUp"
+                data-animate-delay="500" style="margin-top: 80px;">
+                <h4>Investment Sponsors</h4>
+            </div>
+            <div class="grid-layout grid-3-columns" data-margin="20" data-item="grid-item" data-lightbox="gallery">
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/1.png" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/2.jpg " style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/3.png" style="height: 200px;"></a>
+                </div>
+                <!-- <div class="grid-item">
+                        <a ><img src="/images/startup-conclave/logos/4.jpg"style="height: 200px;"></a>
+                    </div> -->
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/5.jpg" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/6.png" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/7.png" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/8.png" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/9.png" style="height: 200px;"></a>
+                </div>
+                <div class="grid-item">
+                    <a><img src="/images/startup-conclave/logos/11.png" style="height: 200px;"></a>
+                </div>
+            </div>
+            <!-- end: Gallery -->
+        </div>
+
+        <div class="container m-t-0 p-t-0">
+            <div class="heading-text heading-line text-center text-light section-heading" data-animate="fadeInUp"
+                data-animate-delay="500" style="margin-top: 100px;">
+                <h4>Outreach Sponsors</h4>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-7 col-md-3">
+                    <a>
+                        <img src="/images/startup-conclave/logos/10.png" alt="" style="height: 300px; width: 300px;" />
+                    </a>
+                </div>
+                <div class="col-7 col-md-3">
+                    <a>
+                        <img src="/images/startup-conclave/logos/12.png" alt="" style="height: 300px; width: 300px;" />
+                    </a>
+                </div>
+                <div class="col-7 col-md-3">
+                    <a>
+                        <img src="/images/startup-conclave/logos/13.png" alt="" style="height: 300px; width: 300px;" />
+                    </a>
+                </div>
+                <div class="col-7 col-md-3">
+                    <a>
+                        <img src="/images/startup-conclave/logos/14.jpeg" alt="" style="height: 300px; width: 300px;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ-->
+    <section id="faq" class="dark fullscreen p-t-0 text-light" style="top: 0px; position: sticky !important;">
+        <div class="container p-t-0 m-t-0">
+            <div class="heading-text heading-line text-light text-center" data-animate="fadeInUp"
+                data-animate-delay="300">
+                <h4 class="heading-text heading-section text-center m-b-40  section-heading">FAQs</h4>
+            </div>
+            <div class="accordion accordion-shadow">
+                <div class="ac-item">
+                    <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>Is there any
+                        registration fees?</h5>
+                    <div class="ac-content">
+                        <p>There are no registration fees at any stage of Elevate.</p>
+                    </div>
+                </div>
+                <div class="ac-item">
+                    <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>What will be the duration
+                        of pitches?</h5>
+                    <div class="ac-content">
+                        <p>First round will consist of 5 min of pitching and QnA, the second round consists of 10 min of
+                            pitching followed by QnA and the final round consists of 15 minutes of pitching and 15
+                            minutes of QnA.</p>
+                    </div>
+                </div>
+                <div class="ac-item">
+                    <h5 class="ac-title font-weight-400"><i class="fa fa-question-circle"></i>
+                        Is this an open room or closed room event?
+                    </h5>
+                    <div class="ac-content">
+                        <p>This is a closed room event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: FAQ-->
+    </div>
+    </div>
+    </section>
+    <section style="background: transparent !important; height: 300px;">
+        <div class="shape-divider" data-style="18" data-color="#39BBCB" data-flip-horizontal="true"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-t-0 p-b-60" style="background-color: #39BBCB;">
+
+        <div class="container" style="display:flex; flex-direction:column; align-items: center;">
+            <h2 class="m-b-10">For queries, contact:</h2>
+            <div>
+
+                <div class="row" style="align-items: center;">
+                    <div class="col-2">
+                        <i class="fa-2x icon-phone"></i>
+                    </div>
+                    <div class="col-10">
+                        <strong>+91 9003687003</strong> Yash
+                        <br>
+                        <strong>+91 70239 05353</strong> Vishwajeet
+                        <br>
+                        <strong>+91 6239658379</strong> Anshika
+                        <br>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+    </section>
+    <!-- end: Contact -->
+    <!-- Footer -->
+    <footer id="footer" class="dark text-light" style="z-index: 20;">
+        <div class="copyright-content p-t-10 p-b-20">
+            <!-- <hr> -->
+            <div class="container">
+                <div class="row h5">
+                    <div class="col-lg-6  text-light">
+                        <div class="d-none d-xl-block d-lg-block">
+                            &copy; Developed by <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                            <br>
+                            All Rights Reserved.
+                        </div>
+                        <div class="d-block d-lg-none text-center">
+                            &copy;Developed by
+                            <br>
+                            <strong>Web Operations | E-Cell | IIT Madras.</strong>
+                            <br>
+                            All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-light">
+                        <div class="d-none d-xl-block d-lg-block">
+                            <span>For issues related to the website, contact:</span>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">Harsh
+                                    <i class="fab fa-whatsapp"></i> : +91 9345105302
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none text-center">
+                            <br>
+                            <span>For issues related to the website, contact:</span>
+                            <div>Harsh <i class="fab fa-whatsapp"></i> : +91 9345105302</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+    </div>
+    <!-- end: Body Inner -->
+
+
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="/js/functions.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/slider-revolution/css/navigation.css">
+
+    <script type="text/javascript" src="/plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript"
+        src="/plugins/slider-revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script async src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+    <!--Template functions-->
+
+
+    <script>
+        function VerticalTimeline(element) {
+            this.element = element;
+            this.blocks = this.element.getElementsByClassName("cd-timeline__block");
+            this.images = this.element.getElementsByClassName("cd-timeline__img");
+            this.contents = this.element.getElementsByClassName("cd-timeline__content");
+            // ..
+        };
+
+        VerticalTimeline.prototype.showBlocks = function () {
+            var self = this;
+            for (var i = 0; i < this.blocks.length; i++) {
+                (function (i) {
+                    if (self.contents[i].classList.contains("cd-timeline__content--hidden") && self.blocks[i].getBoundingClientRect().top <= window.innerHeight * self.offset) {
+                        // add bounce-in animation
+                        self.images[i].classList.add("cd-timeline__img--bounce-in");
+                        self.contents[i].classList.add("cd-timeline__content--bounce-in");
+                        self.images[i].classList.remove("cd-timeline__img--hidden");
+                        self.contents[i].classList.remove("cd-timeline__content--hidden");
+                    }
+                })(i);
+            }
+        };
+    </script>
+    <!--VEGAS SLIDESHOW-->
+    <link href="/plugins/vegas/vegas.min.css" rel="stylesheet">
+    <script src="/plugins/vegas/vegas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="/js/homepage/register-login.js"></script>
+
+    <script>
+        $(function () {
+            $("#vegas-slideshow").vegas({
+                delay: 4000,
+                transition: 'fade2',
+                transitionDuration: 1000,
+                slides: [{
+                    src: "/images/startup-conclave/gallery/2.jpg"
+                }, {
+                    src: "/images/startup-conclave/gallery/3.jpg"
+                }, {
+                    src: "/images/startup-conclave/gallery/1.jpg"
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
